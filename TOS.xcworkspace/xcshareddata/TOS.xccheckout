@@ -10,31 +10,31 @@
 	<string>TOS</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9377B87156DE1DDD97FFFAC520D87B3609940582</key>
-		<string>https://bitbucket.org/TeoCode/sourcecode.git</string>
+		<key>56105FBBD2DEC75A51A960DA397BF1864D211B58</key>
+		<string>https://github.com/mvitolo/TimeOfSoccer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TOS/TOS/TOS.xcworkspace</string>
+	<string>TOS.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9377B87156DE1DDD97FFFAC520D87B3609940582</key>
-		<string>../../..</string>
+		<key>56105FBBD2DEC75A51A960DA397BF1864D211B58</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/TeoCode/sourcecode.git</string>
+	<string>https://github.com/mvitolo/TimeOfSoccer.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9377B87156DE1DDD97FFFAC520D87B3609940582</string>
+	<string>56105FBBD2DEC75A51A960DA397BF1864D211B58</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9377B87156DE1DDD97FFFAC520D87B3609940582</string>
+			<string>56105FBBD2DEC75A51A960DA397BF1864D211B58</string>
 			<key>IDESourceControlWCCName</key>
-			<string>sourcecode</string>
+			<string>TimeOfSoccer</string>
 		</dict>
 	</array>
 </dict>
