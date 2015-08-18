@@ -1,0 +1,196 @@
+{"Coaches":{
+        "Coach":[
+                 {
+                 "Name":"-",
+                 "HumanCost":-1,
+                 "MoneyCost":2,
+                 "DefenseModule":[{"Player":1},{"Player":2},{"Player":3},{"Player":4},{"Player":5}],
+                 
+                 "AttackModule":[{"Player":6},{"Player":7},{"Player":8},{"Player":9},{"Player":10},{"Player":11}],
+                 "Blue":0,
+                 "Yellow":0,
+                 "Red":0,
+                 "Orange":0,
+                 "Purple":0,
+                 "image":"ent_1.png"
+                 },
+                 
+                 {
+                 "Name":"BELMONTE",
+                 "HumanCost":0,
+                 "MoneyCost":3,
+                 "DefenseModule":[{"Player":1},{"Player":2},{"Player":3},{"Player":4},{"Player":5},{"Player":7}],
+                 
+                 "AttackModule":[{"Player":6},{"Player":8},{"Player":9},{"Player":10},{"Player":11}],
+                 "Blue":1,
+                 "Yellow":0,
+                 "Red":0,
+                 "Orange":0,
+                 "Purple":0,
+                 "image":"ent_5.png"
+                 },
+                 
+                 {
+                 "Name":"MATASIETE",
+                 "HumanCost":-1,
+                 "MoneyCost":3,
+                 "DefenseModule":[{"Player":1},{"Player":3},{"Player":4},{"Player":5}],
+                 
+                 "AttackModule":[{"Player":2},{"Player":6},{"Player":7},{"Player":8},{"Player":9},{"Player":10},{"Player":11}],
+                 "Blue":0,
+                 "Yellow":1,
+                 "Red":0,
+                 "Orange":0,
+                 "Purple":0,
+                 "image":"ent_6.png"
+                 },
+                 
+                 {
+                 "Name":"PICAPICARA",
+                 "HumanCost":-1,
+                 "MoneyCost":5,
+                 "DefenseModule":[{"Player":1},{"Player":2},{"Player":3},{"Player":4},{"Player":5},{"Player":9}],
+                 
+                 "AttackModule":[{"Player":6},{"Player":7},{"Player":8},{"Player":10},{"Player":11}],
+                 "Blue":0,
+                 "Yellow":0,
+                 "Red":3,
+                 "Orange":0,
+                 "Purple":0,
+                 "image":"ent_7.png"
+                 },
+                 
+                 {
+                 "Name":"ANGEL MARTINEZ",
+                 "HumanCost":-1,
+                 "MoneyCost":7,
+                 "DefenseModule":[{"Player":1},{"Player":2},{"Player":3},{"Player":4}],
+                 
+                 "AttackModule":[{"Player":5},{"Player":6},{"Player":7},{"Player":8},{"Player":9},{"Player":10},{"Player":11}],
+                 "Blue":0,
+                 "Yellow":0,
+                 "Red":0,
+                 "Orange":2,
+                 "Purple":0,
+                 "image":"ent_8.png"
+                 },
+                 
+                 {
+                 "Name":"BUHONERO",
+                 "HumanCost":-2,
+                 "MoneyCost":8,
+                 "DefenseModule":[{"Player":1},{"Player":2},{"Player":3},{"Player":4},{"Player":5},{"Player":6}],
+                 
+                 "AttackModule":[{"Player":7},{"Player":8},{"Player":9},{"Player":10},{"Player":11}],
+                 "Blue":0,
+                 "Yellow":1,
+                 "Red":0,
+                 "Orange":0,
+                 "Purple":2,
+                 "image":"ent_9.png"
+                 },
+                 
+                 {
+                 "Name":"ETHAN",
+                 "HumanCost":-2,
+                 "MoneyCost":5,
+                 "DefenseModule":[{"Player":1},{"Player":2},{"Player":3},{"Player":5}],
+                 
+                 "AttackModule":[{"Player":4},{"Player":6},{"Player":7},{"Player":8},{"Player":9},{"Player":10},{"Player":11}],
+                 "Blue":0,
+                 "Yellow":0,
+                 "Red":0,
+                 "Orange":1,
+                 "Purple":1,
+                 "image":"ent_10.png"
+                 },
+                 
+                 {
+                 "Name":"MELDREL",
+                 "HumanCost":-1,
+                 "MoneyCost":6,
+                 "DefenseModule":[{"Player":1},{"Player":2},{"Player":3},{"Player":4},{"Player":5},{"Player":8}],
+                 
+                 "AttackModule":[{"Player":6},{"Player":7},{"Player":9},{"Player":10},{"Player":11}],
+                 "Blue":2,
+                 "Yellow":0,
+                 "Red":0,
+                 "Orange":0,
+                 "Purple":0,
+                 "image":"ent_11.png"
+                 },
+                 {
+                 "Name":"DULZINEA",
+                 "HumanCost":-2,
+                 "MoneyCost":13,
+                 "DefenseModule":[{"Player":1},{"Player":3},{"Player":4},{"Player":5}],
+                 
+                 "AttackModule":[{"Player":2},{"Player":6},{"Player":7},{"Player":8},{"Player":9},{"Player":10},{"Player":11}],
+                 "Blue":0,
+                 "Yellow":1,
+                 "Red":0,
+                 "Orange":2,
+                 "Purple":0,
+                 "image":"ent_12.png"
+                 },
+                 {
+                 "Name":"EXIMENO",
+                 "HumanCost":-2,
+                 "MoneyCost":10,
+                 "DefenseModule":[{"Player":1},{"Player":2},{"Player":3},{"Player":4},{"Player":5},{"Player":9}],
+                 
+                 "AttackModule":[{"Player":6},{"Player":7},{"Player":8},{"Player":10},{"Player":11}],
+                 "Blue":3,
+                 "Yellow":0,
+                 "Red":0,
+                 "Orange":0,
+                 "Purple":0,
+                 "image":"ent_13.png"
+                 },
+                 {
+                 "Name":"LUISTECHNO",
+                 "HumanCost":-2,
+                 "MoneyCost":10,
+                 "DefenseModule":[{"Player":1},{"Player":2},{"Player":4},{"Player":5}],
+                 
+                 "AttackModule":[{"Player":3},{"Player":6},{"Player":7},{"Player":8},{"Player":9},{"Player":10},{"Player":11}],
+                 "Blue":0,
+                 "Yellow":0,
+                 "Red":0,
+                 "Orange":0,
+                 "Purple":2,
+                 "image":"ent_14.png"
+                 },
+                 
+                 {
+                 "Name":"BECERRA",
+                 "HumanCost":-3,
+                 "MoneyCost":17,
+                 "DefenseModule":[{"Player":1},{"Player":2},{"Player":3},{"Player":4},{"Player":5},{"Player":8}],
+                 
+                 "AttackModule":[{"Player":6},{"Player":7},{"Player":9},{"Player":10},{"Player":11}],
+                 "Blue":2,
+                 "Yellow":0,
+                 "Red":0,
+                 "Orange":2,
+                 "Purple":0,
+                 "image":"ent_15.png"
+                 },
+                 
+                 {
+                 "Name":"JAVIDELNUN",
+                 "HumanCost":-3,
+                 "MoneyCost":14,
+                 "DefenseModule":[{"Player":1},{"Player":2},{"Player":3},{"Player":4}],
+                 
+                 "AttackModule":[{"Player":5},{"Player":6},{"Player":7},{"Player":8},{"Player":9},{"Player":10},{"Player":11}],
+                 "Blue":0,
+                 "Yellow":0,
+                 "Red":0,
+                 "Orange":0,
+                 "Purple":1,
+                 "image":"ent_15.png"
+                 }
+                 ]
+       }
+}
