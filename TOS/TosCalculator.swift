@@ -36,9 +36,9 @@ public class TOSCalculator {
     }
     
     private func getJsonData(FileName:String) ->NSDictionary{
-        var error: NSError?
+        var _: NSError?
         let path = NSBundle.mainBundle().pathForResource(FileName, ofType: "json")
-        let pathURL = NSURL(string: path!)
+        let _ = NSURL(string: path!)
         let data: NSData? = NSData(contentsOfFile: path!)
         let jsonDict = try! NSJSONSerialization.JSONObjectWithData(data!, options: []) as! NSDictionary
         return jsonDict
@@ -95,7 +95,7 @@ public class TOSCalculator {
         if ( player.count == 0 || positionIndex == 2 || positionIndex == 6){
             return res
         }
-        var nextPosition = positionIndex - 1
+      //  var nextPosition = positionIndex - 1
         var modifier = 0
         var addExtraConnection = false
         if (positionIndex == 9){
@@ -137,7 +137,7 @@ public class TOSCalculator {
         if ( player.count == 0 || positionIndex == 5 || positionIndex == 9){
             return res
         }
-        var nextPosition = positionIndex + 1
+      //  var nextPosition = positionIndex + 1
         var modifier = 0
         var addExtraConnection = false
         if (positionIndex == 6){
@@ -179,14 +179,14 @@ public class TOSCalculator {
         if ( player.count == 0 || positionIndex < 6){
             return res
         }
-        var nextPosition = 0
+   //     var nextPosition = 0
         var modifier = 2
         
-        if ( positionIndex < 10 ){
+      /*  if ( positionIndex < 10 ){
             nextPosition = positionIndex - 4
         } else {
             nextPosition = positionIndex - 3
-        }
+        }*/
         
         if ( positionIndex == 7 || positionIndex == 8 ){
             modifier = 0
@@ -216,14 +216,14 @@ public class TOSCalculator {
         if ( player.count == 0 || positionIndex > 10 || positionIndex == 6 || positionIndex == 9){
             return res
         }
-        var nextPosition = 0
+     //   var nextPosition = 0
         var modifier = 2
         
-        if ( positionIndex < 6 ){
+    /*    if ( positionIndex < 6 ){
             nextPosition = positionIndex + 4
         } else {
             nextPosition = positionIndex + 3
-        }
+        }*/
         
         if ( positionIndex == 3 || positionIndex == 4 ){
             modifier = 0

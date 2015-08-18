@@ -85,6 +85,7 @@ class TOSCalculatorTests: XCTestCase {
         TOSCalculator.sharedInstance.addPlayerToTeam(4, position: 2)
         TOSCalculator.sharedInstance.addPlayerToTeam(3, position: 6)
         let result = TOSCalculator.sharedInstance.calculatePlayer(2)
+        XCTAssert( (result == 5) , String(format:"%s",__FUNCTION__))
     }
     
     func testPerformanceExample() {
