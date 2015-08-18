@@ -640,6 +640,8 @@
 		ABF28BD81B68243E00B61F29 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Funambol;
 				TargetAttributes = {

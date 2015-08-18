@@ -30,7 +30,7 @@ public class TOSCalculator {
     
     func resetTeam(){
         for index in 1...11{
-            var playerArray = NSDictionary()
+            let playerArray = NSDictionary()
             team[index] = playerArray
         }
     }
@@ -39,8 +39,8 @@ public class TOSCalculator {
         var error: NSError?
         let path = NSBundle.mainBundle().pathForResource(FileName, ofType: "json")
         let pathURL = NSURL(string: path!)
-        var data: NSData? = NSData(contentsOfFile: path!)
-        let jsonDict = NSJSONSerialization.JSONObjectWithData(data!, options: nil, error: &error) as! NSDictionary
+        let data: NSData? = NSData(contentsOfFile: path!)
+        let jsonDict = try! NSJSONSerialization.JSONObjectWithData(data!, options: []) as! NSDictionary
         return jsonDict
     }
     
@@ -192,7 +192,7 @@ public class TOSCalculator {
             modifier = 0
         }
         
-        var nextplayer = team.objectForKey(positionIndex) as! NSDictionary
+        let nextplayer = team.objectForKey(positionIndex) as! NSDictionary
         if ( nextplayer.count > 0){
             let connString = player.objectForKey("DownCon") as! NSString
             if ( connString.isEqualToString("")){
@@ -229,7 +229,7 @@ public class TOSCalculator {
             modifier = 0
         }
         
-        var nextplayer = team.objectForKey(positionIndex) as! NSDictionary
+        let nextplayer = team.objectForKey(positionIndex) as! NSDictionary
         if ( nextplayer.count > 0){
             let connString = player.objectForKey("TopCon") as! NSString
             if ( connString.isEqualToString("")){
