@@ -33,38 +33,6 @@
             endingLineNumber = "88"
             landmarkName = "testVerticalConnection()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TOSTests.TOSCalculatorTests.testVerticalConnection (TOSTests.TOSCalculatorTests)() -&gt; ()"
-                  moduleName = "TOSTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Teo/myCode/GitHub/TimeOfSoccer/TOSTests/TOSCalculatorTests.swift"
-                  timestampString = "461605853.838641"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "225">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TOSTests.TOSCalculatorTests.(testVerticalConnection (TOSTests.TOSCalculatorTests) -&gt; () -&gt; ()).(implicit closure #1)"
-                  moduleName = "TOSTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Teo/myCode/GitHub/TimeOfSoccer/TOSTests/TOSCalculatorTests.swift"
-                  timestampString = "461605853.839187"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

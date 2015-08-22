@@ -295,6 +295,40 @@ public class TOSCalculator {
         return res
     }
     
+    func getCoachModifier(coachPosition: Int, playerPosition: Int) -> Int{
+        
+        var coach = NSDictionary()
+        
+        if (coachPosition == 1 ){
+            coach = coach1
+        } else if (coachPosition == 2){
+            coach = coach2
+        } else if (coachPosition == 3){
+            coach = coach3
+        }
+        
+        let teamplayer = team.objectForKey(playerPosition) as! NSDictionary
+        if(teamplayer.count == 0 || coach.count == 0) {
+            return 0
+        }
+        
+        var res = 0
+        
+        let tCon = teamplayer.objectForKey("TopCon") as! NSString
+        let lCon = teamplayer.objectForKey("LeftCon") as! NSString
+        let rCon = teamplayer.objectForKey("RightCon") as! NSString
+        let dCon = teamplayer.objectForKey("DownCon") as! NSString
+        let con = [tCon,lCon,rCon,dCon]
+        
+        for connection in con {
+            if (!(connection.isEqualToString(""))){
+                res += coach.objectForKey(connection) as! Int
+            }
+        }
+        
+        return res
+    }
+    
     func calculatePlayer(playerPosition: Int) ->Int{
         var result = 0
         let teamplayer = team.objectForKey(playerPosition) as! NSDictionary
@@ -307,6 +341,15 @@ public class TOSCalculator {
         
         let conn = getConnectionMultiplier(playerPosition)
         result += conn
+        
+        var coachmodifier = 0
+        
+        for index in 1...3{
+            coachmodifier += getCoachModifier(index, playerPosition: playerPosition)
+        }
+        
+        result += coachmodifier
+        
         return result
     }
     
