@@ -1,1392 +1,1970 @@
-{"Players":{
-        "Player":[
-                 {
-                 "Name":"LAGARTOS CF",
-                  "Positions":[{"Position":1}],
-                 "HumanCost":-1,
-                 "MoneyCost":2,
-                 "YellowTop":0,
-                 "RedTop":0,
-                 "OrangeDown":0,
-                 "OrangeLeft":0,
-                 "OrangeRight":0,
-                 "BlueLeft":0,
-                 "BluRight":0,
-                 "TopCon":"",
-                 "LeftCon":"",
-                 "RightCon":"",
-                 "DownCon":"",
-                 "ShirtNumber":91,
-                 "image":"jug_2.png"
-                 },
-                 {
-                 "Name":"LAGARTOS CF",
-                  "Positions":[{"Position":2},{"Position":4}],
-                 "HumanCost":-1,
-                 "MoneyCost":2,
-                 "YellowTop":0,
-                 "RedTop":0,
-                 "OrangeDown":0,
-                 "OrangeLeft":1,
-                 "OrangeRight":1,
-                 "BlueLeft":1,
-                 "BluRight":1,
-                 "TopCon":"",
-                 "LeftCon":"",
-                 "RightCon":"",
-                 "DownCon":"",
-                 "ShirtNumber":92,
-                 "image":"jug_3.png"
-                 },
-                 {
-                 "Name":"LAGARTOS CF",
-                 "Positions":[{"Position":2},{"Position":3}],
-                 "HumanCost":-1,
-                 "MoneyCost":2,
-                 "YellowTop":1,
-                 "TopRight":0,
-                 "OrangeDown":1,
-                 "OrangeLeft":0,
-                 "OrangeRight":0,
-                 "BlueLeft":0,
-                 "BluRight":0,
-                 "TopCon":"",
-                 "LeftCon":"",
-                 "RightCon":"",
-                 "DownCon":"",
-                 "ShirtNumber":93,
-                 "image":"jug_4.png"
-                 },
-                 {
-                 "Name":"LAGARTOS CF",
-                 "Positions":[{"Position":6},{"Position":9}],
-                 "HumanCost":-1,
-                 "MoneyCost":2,
-                 "YellowTop":0,
-                 "RedTop":0,
-                 "OrangeDown":0,
-                 "OrangeLeft":1,
-                 "OrangeRight":1,
-                 "BlueLeft":1,
-                 "BluRight":1,
-                 "TopCon":"",
-                 "LeftCon":"",
-                 "RightCon":"",
-                 "DownCon":"",
-                 "ShirtNumber":94,
-                 "image":"jug_5.png"
-                 },
-                 {
-                 "Name":"LAGARTOS CF",
-                 "Positions":[{"Position":7},{"Position":8}],
-                 "HumanCost":-1,
-                 "MoneyCost":2,
-                 "YellowTop":1,
-                 "RedTop":0,
-                 "OrangeDown":1,
-                 "OrangeLeft":0,
-                 "OrangeRight":0,
-                 "BlueLeft":0,
-                 "BluRight":0,
-                 "TopCon":"",
-                 "LeftCon":"",
-                 "RightCon":"",
-                 "DownCon":"",
-                 "ShirtNumber":95,
-                 "image":"jug_6.png"
-                 },
-                 {
-                 "Name":"LAGARTOS CF",
-                 "Positions":[{"Position":10},{"Position":11}],
-                 "HumanCost":-1,
-                 "MoneyCost":2,
-                 "YellowTop":0,
-                 "RedTop":1,
-                 "OrangeDown":0,
-                 "OrangeLeft":0,
-                 "OrangeRight":0,
-                 "BlueLeft":0,
-                 "BluRight":0,
-                 "TopCon":"",
-                 "LeftCon":"",
-                 "RightCon":"",
-                 "DownCon":"",
-                 "ShirtNumber":96,
-                 "image":"jug_7.png"
-                  },
-                  {
-                  "Name":"JULIO ALBERTO",
-                  "Positions":[{"Position":2},{"Position":6}],
-                  "HumanCost":-1,
-                  "MoneyCost":4,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":2,
-                  "OrangeRight":0,
-                  "BlueLeft":3,
-                  "BluRight":0,
-                  "TopCon":"Yellow",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":3,
-                  "image":"jug_26.png"
-                  },
-                  {
-                  "Name":"MIGUELÓN",
-                  "Positions":[{"Position":2},{"Position":3},{"Position":4},{"Position":5}],
-                  "HumanCost":-1,
-                  "MoneyCost":6,
-                  "YellowTop":1,
-                  "RedTop":0,
-                  "OrangeDown":1,
-                  "OrangeLeft":2,
-                  "OrangeRight":1,
-                  "BlueLeft":1,
-                  "BluRight":1,
-                  "TopCon":"Yellow",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":4,
-                  "image":"jug_27.png"
-                  },
-                  {
-                  "Name":"DANI",
-                  "Positions":[{"Position":3},{"Position":4}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":1,
-                  "RedTop":0,
-                  "OrangeDown":1,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Purple",
-                  "LeftCon":"",
-                  "RightCon":"Purple",
-                  "DownCon":"",
-                  "ShirtNumber":5,
-                  "image":"jug_28.png"
-                  },
-                  {
-                  "Name":"EROS",
-                  "Positions":[{"Position":6},{"Position":7},{"Position":8}],
-                  "HumanCost":-1,
-                  "MoneyCost":4,
-                  "YellowTop":2,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":1,
-                  "OrangeRight":0,
-                  "BlueLeft":2,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"Blue",
-                  "DownCon":"",
-                  "ShirtNumber":8,
-                  "image":"jug_29.png"
-                  },
-                  {
-                  "Name":"LEMACHINGA",
-                  "Positions":[{"Position":7},{"Position":8},{"Position":10},{"Position":11}],
-                  "HumanCost":-1,
-                  "MoneyCost":4,
-                  "YellowTop":1,
-                  "RedTop":0,
-                  "OrangeDown":1,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":2,
-                  "BluRight":0,
-                  "TopCon":"Red",
-                  "LeftCon":"",
-                  "RightCon":"Blue",
-                  "DownCon":"",
-                  "ShirtNumber":18,
-                  "image":"jug_30.png"
-                  },
-                  {
-                  "Name":"FUCH",
-                  "Positions":[{"Position":2},{"Position":5}],
-                  "HumanCost":-1,
-                  "MoneyCost":4,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":1,
-                  "OrangeRight":3,
-                  "BlueLeft":1,
-                  "BluRight":2,
-                  "TopCon":"Purple",
-                  "LeftCon":"Orange",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":20,
-                  "image":"jug_31.png"
-                  },
-                  {
-                  "Name":"ALBERTOTOWER",
-                  "Positions":[{"Position":3},{"Position":4},{"Position":7},{"Position":8}],
-                  "HumanCost":-1,
-                  "MoneyCost":4,
-                  "YellowTop":2,
-                  "RedTop":0,
-                  "OrangeDown":1,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"Purple",
-                  "RightCon":"",
-                  "DownCon":"Orange",
-                  "ShirtNumber":23,
-                  "image":"jug_32.png"
-                  },
-                  {
-                  "Name":"JONNYUTAH",
-                  "Positions":[{"Position":9}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":2,
-                  "BlueLeft":0,
-                  "BluRight":2,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"Purple",
-                  "ShirtNumber":24,
-                  "image":"jug_33.png"
-                  },
-                  {
-                  "Name":"STEPHANE",
-                  "Positions":[{"Position":1}],
-                  "HumanCost":-1,
-                  "MoneyCost":4,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":3,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":25,
-                  "image":"jug_34.png"
-                  },
-                  {
-                  "Name":"JON",
-                  "Positions":[{"Position":1}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":2,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":26,
-                  "image":"jug_35.png"
-                  },
-                  {
-                  "Name":"SANCHO",
-                  "Positions":[{"Position":3},{"Position":4},{"Position":5}],
-                  "HumanCost":-1,
-                  "MoneyCost":4,
-                  "YellowTop":1,
-                  "RedTop":0,
-                  "OrangeDown":1,
-                  "OrangeLeft":0,
-                  "OrangeRight":1,
-                  "BlueLeft":0,
-                  "BluRight":1,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"Orange",
-                  "DownCon":"Orange",
-                  "ShirtNumber":27,
-                  "image":"jug_36.png"
-                  },
-                  {
-                  "Name":"ZEEFRES",
-                  "Positions":[{"Position":9}],
-                  "HumanCost":-1,
-                  "MoneyCost":4,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":2,
-                  "BlueLeft":0,
-                  "BluRight":3,
-                  "TopCon":"",
-                  "LeftCon":"Blue",
-                  "RightCon":"",
-                  "DownCon":"Purple",
-                  "ShirtNumber":28,
-                  "image":"jug_37.png"
-                  },
-                  {
-                  "Name":"ERIC DRAVEN",
-                  "Positions":[{"Position":9},{"Position":10},{"Position":11}],
-                  "HumanCost":-1,
-                  "MoneyCost":4,
-                  "YellowTop":0,
-                  "RedTop":2,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":1,
-                  "BlueLeft":0,
-                  "BluRight":1,
-                  "TopCon":"",
-                  "LeftCon":"Blue",
-                  "RightCon":"",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":29,
-                  "image":"jug_38.png"
-                  },
-                  {
-                  "Name":"JAVIEW LOZANO",
-                  "Positions":[{"Position":7},{"Position":8}],
-                  "HumanCost":-1,
-                  "MoneyCost":2,
-                  "YellowTop":1,
-                  "RedTop":0,
-                  "OrangeDown":1,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"Purple",
-                  "RightCon":"",
-                  "DownCon":"Purple",
-                  "ShirtNumber":32,
-                  "image":"jug_39.png"
-                  },
-                  {
-                  "Name":"GEORGIRION",
-                  "Positions":[{"Position":3},{"Position":4}],
-                  "HumanCost":-1,
-                  "MoneyCost":2,
-                  "YellowTop":1,
-                  "RedTop":0,
-                  "OrangeDown":1,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"Purple",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":34,
-                  "image":"jug_40.png"
-                  },
-                  {
-                  "Name":"NUBARIS",
-                  "Positions":[{"Position":3},{"Position":4},{"Position":7},{"Position":8},{"Position":10},{"Position":11}],
-                  "HumanCost":-1,
-                  "MoneyCost":6,
-                  "YellowTop":2,
-                  "RedTop":1,
-                  "OrangeDown":1,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"Blue",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":38,
-                  "image":"jug_41.png"
-                  },
-                  {
-                  "Name":"DIAMONT",
-                  "Positions":[{"Position":5},{"Position":9}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":1,
-                  "BlueLeft":0,
-                  "BluRight":2,
-                  "TopCon":"Yellow",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":43,
-                  "image":"jug_42.png"
-                  },
-                  {
-                  "Name":"UKIC",
-                  "Positions":[{"Position":6},{"Position":7},{"Position":8}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":1,
-                  "RedTop":0,
-                  "OrangeDown":1,
-                  "OrangeLeft":1,
-                  "OrangeRight":0,
-                  "BlueLeft":2,
-                  "BluRight":0,
-                  "TopCon":"Yellow",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":44,
-                  "image":"jug_43.png"
-                  },
-                  {
-                  "Name":"DONKIJOTE",
-                  "Positions":[{"Position":10},{"Position":11}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":2,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"Purple",
-                  "ShirtNumber":46,
-                  "image":"jug_44.png"
-                  },
-                  {
-                  "Name":"GELATAO",
-                  "Positions":[{"Position":10},{"Position":11}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":69,
-                  "image":"jug_45.png"
-                  },
-                  {
-                  "Name":"C.BENMAC",
-                  "Positions":[{"Position":2},{"Position":3},{"Position":4},{"Position":5}],
-                  "HumanCost":0,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"Purple",
-                  "RightCon":"Purlpe",
-                  "DownCon":"",
-                  "ShirtNumber":97,
-                  "image":"jug_46.png"
-                  },
-                  {
-                  "Name":"ANDRÉS LOZANO",
-                  "Positions":[{"Position":6},{"Position":7},{"Position":8},{"Position":9}],
-                  "HumanCost":0,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Purple",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"Purple",
-                  "ShirtNumber":98,
-                  "image":"jug_47.png"
-                  },
-                  {
-                  "Name":"DOC JUNIOR",
-                  "Positions":[{"Position":10},{"Position":11}],
-                  "HumanCost":0,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"Purple",
-                  "RightCon":"Purple",
-                  "DownCon":"Purple",
-                  "ShirtNumber":99,
-                  "image":"jug_48.png"
-                  },
-                  {
-                  "Name":"KALAMIDAD",
-                  "Positions":[{"Position":5},{"Position":9}],
-                  "HumanCost":-2,
-                  "MoneyCost":10,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":9,
-                  "BlueLeft":0,
-                  "BluRight":9,
-                  "TopCon":"Yellow",
-                  "LeftCon":"Purple",
-                  "RightCon":"",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":2,
-                  "image":"jug_49.png"
-                  },
-                  {
-                  "Name":"POTAJACIÓN",
-                  "Positions":[{"Position":2}],
-                  "HumanCost":-2,
-                  "MoneyCost":8,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":5,
-                  "OrangeRight":0,
-                  "BlueLeft":5,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"Orange",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":17,
-                  "image":"jug_50.png"
-                  },
-                  {
-                  "Name":"OLADOLA",
-                  "Positions":[{"Position":7},{"Position":8},{"Position":9}}],
-                  "HumanCost":-2,
-                  "MoneyCost":12,
-                  "YellowTop":10,
-                  "RedTop":0,
-                  "OrangeDown":9,
-                  "OrangeLeft":0,
-                  "OrangeRight":10,
-                  "BlueLeft":0,
-                  "BluRight":10,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":21,
-                  "image":"jug_51.png"
-                  },
-                  {
-                  "Name":"ROCINANTE",
-                  "Positions":[{"Position":7},{"Position":8}],
-                  "HumanCost":-2,
-                  "MoneyCost":8,
-                  "YellowTop":6,
-                  "RedTop":0,
-                  "OrangeDown":5,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Yellow",
-                  "LeftCon":"Purple",
-                  "RightCon":"Purple",
-                  "DownCon":"",
-                  "ShirtNumber":23,
-                  "image":"jug_52.png"
-                  },
-                  {
-                  "Name":"FRAN MOLI",
-                  "Positions":[{"Position":7},{"Position":8},{"Position":10},{"Position":11}],
-                  "HumanCost":-2,
-                  "MoneyCost":9,
-                  "YellowTop":7,
-                  "RedTop":7,
-                  "OrangeDown":5,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":30,
-                  "image":"jug_53.png"
-                  },
-                  {
-                  "Name":"BUCCI",
-                  "Positions":[{"Position":1},{"Position":5}],
-                  "HumanCost":-2,
-                  "MoneyCost":9,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":7,
-                  "OrangeLeft":0,
-                  "OrangeRight":6,
-                  "BlueLeft":0,
-                  "BluRight":5,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":31,
-                  "image":"jug_54.png"
-                  },
-                  {
-                  "Name":"CEVASCO",
-                  "Positions":[{"Position":1}],
-                  "HumanCost":-2,
-                  "MoneyCost":7,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":6,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":35,
-                  "image":"jug_55.png"
-                  },
-                  {
-                  "Name":"ARISTARK",
-                  "Positions":[{"Position":3},{"Position":4}],
-                  "HumanCost":-2,
-                  "MoneyCost":7,
-                  "YellowTop":4,
-                  "RedTop":0,
-                  "OrangeDown":6,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"Purple",
-                  "DownCon":"",
-                  "ShirtNumber":39,
-                  "image":"jug_56.png"
-                  },
-                  {
-                  "Name":"STOICAKOVIC",
-                  "Positions":[{"Position":10},{"Position":11}],
-                  "HumanCost":-2,
-                  "MoneyCost":8,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Red",
-                  "LeftCon":"Blue",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":40,
-                  "image":"jug_57.png"
-                  },
-                  {
-                  "Name":"MONTERO",
-                  "Positions":[{"Position":6}],
-                  "HumanCost":-2,
-                  "MoneyCost":8,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":6,
-                  "OrangeRight":0,
-                  "BlueLeft":7,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"Purple",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":41,
-                  "image":"jug_58.png"
-                  },
-                  {
-                  "Name":"AKUMO",
-                  "Positions":[{"Position":3},{"Position":4}],
-                  "HumanCost":-2,
-                  "MoneyCost":6,
-                  "YellowTop":3,
-                  "RedTop":0,
-                  "OrangeDown":5,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":45,
-                  "image":"jug_59.png"
-                  },
-                  {
-                  "Name":"CÁRDENAS",
-                  "Positions":[{"Position":10},{"Position":11}],
-                  "HumanCost":-2,
-                  "MoneyCost":7,
-                  "YellowTop":0,
-                  "RedTop":6,
-                  "OrangeDown":5,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":47,
-                  "image":"jug_60.png"
-                  },
-                  {
-                  "Name":"AMARILLO",
-                  "Positions":[{"Position":10},{"Position":11}],
-                  "HumanCost":-2,
-                  "MoneyCost":11,
-                  "YellowTop":0,
-                  "RedTop":8,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Red",
-                  "LeftCon":"Blue",
-                  "RightCon":"Blue",
-                  "DownCon":"",
-                  "ShirtNumber":9,
-                  "image":"jug_61.png"
-                  },
-                  {
-                  "Name":"MUSABAI",
-                  "Positions":[{"Position":9},{"Position":10},{"Position":11}],
-                  "HumanCost":-2,
-                  "MoneyCost":9,
-                  "YellowTop":0,
-                  "RedTop":5,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":4,
-                  "BlueLeft":6,
-                  "BluRight":0,
-                  "TopCon":"Red",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":10,
-                  "image":"jug_62.png"
-                  },
-                  {
-                  "Name":"ALFALSECAS",
-                  "Positions":[{"Position":1}],
-                  "HumanCost":-2,
-                  "MoneyCost":10,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":8,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":13,
-                  "image":"jug_63.png"
-                  },
-                  {
-                  "Name":"KSUCO",
-                  "Positions":[{"Position":3},{"Position":4}],
-                  "HumanCost":-2,
-                  "MoneyCost":11,
-                  "YellowTop":10,
-                  "RedTop":0,
-                  "OrangeDown":9,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Purple",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":16,
-                  "image":"jug_64.png"
-                  },
-                  {
-                  "Name":"MODOFARK",
-                  "Positions":[{"Position":1}],
-                  "HumanCost":-2,
-                  "MoneyCost":8,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":7,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":22,
-                  "image":"jug_65.png"
-                  },
-                  {
-                  "Name":"WILSON SMITH",
-                  "Positions":[{"Position":3},{"Position":4},{"Position":7},{"Position":8}],
-                  "HumanCost":-2,
-                  "MoneyCost":10,
-                  "YellowTop":9,
-                  "RedTop":0,
-                  "OrangeDown":8,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Purple",
-                  "LeftCon":"",
-                  "RightCon":"Purple",
-                  "DownCon":"Purple",
-                  "ShirtNumber":33,
-                  "image":"jug_66.png"
-                  },
-                  {
-                  "Name":"LAPIE",
-                  "Positions":[{"Position":2},{"Position":3},{"Position":4}],
-                  "HumanCost":-2,
-                  "MoneyCost":13,
-                  "YellowTop":9,
-                  "RedTop":0,
-                  "OrangeDown":9,
-                  "OrangeLeft":8,
-                  "OrangeRight":0,
-                  "BlueLeft":8,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"Orange",
-                  "RightCon":"",
-                  "DownCon":"Orange",
-                  "ShirtNumber":36,
-                  "image":"jug_67.png"
-                  },
-                  {
-                  "Name":"PAPIPO",
-                  "Positions":[{"Position":6},{"Position":9}],
-                  "HumanCost":-2,
-                  "MoneyCost":12,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":9,
-                  "OrangeRight":9,
-                  "BlueLeft":10,
-                  "BluRight":10,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":37,
-                  "image":"jug_68.png"
-                  },
-                  {
-                  "Name":"DAMIAN",
-                  "Positions":[{"Position":6},{"Position":10},{"Position":11}],
-                  "HumanCost":-2,
-                  "MoneyCost":8,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":6,
-                  "OrangeRight":0,
-                  "BlueLeft":6,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"Purple",
-                  "RightCon":"Purple",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":42,
-                  "image":"jug_69.png"
-                  },
-                  {
-                  "Name":"YOSI",
-                  "Positions":[{"Position":3},{"Position":4}],
-                  "HumanCost":-2,
-                  "MoneyCost":9,
-                  "YellowTop":6,
-                  "RedTop":0,
-                  "OrangeDown":6,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"Orange",
-                  "ShirtNumber":51,
-                  "image":"jug_70.png"
-                  },
-                  {
-                  "Name":"JSPER",
-                  "Positions":[{"Position":1},{"Position":9}],
-                  "HumanCost":-3,
-                  "MoneyCost":15,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":12,
-                  "OrangeLeft":0,
-                  "OrangeRight":8,
-                  "BlueLeft":0,
-                  "BluRight":11,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":1,
-                  "image":"jug_71.png"
-                  },
-                  {
-                  "Name":"RASCOLNIKOV",
-                  "Positions":[{"Position":3},{"Position":4}],
-                  "HumanCost":-3,
-                  "MoneyCost":16,
-                  "YellowTop":11,
-                  "RedTop":0,
-                  "OrangeDown":10,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"Purple",
-                  "DownCon":"Orange",
-                  "ShirtNumber":6,
-                  "image":"jug_72.png"
-                  },
-                  {
-                  "Name":"PABLO #.",
-                  "Positions":[{"Position":6},{"Position":7},{"Position":8},{"Position":9}],
-                  "HumanCost":-3,
-                  "MoneyCost":17,
-                  "YellowTop":11,
-                  "RedTop":0,
-                  "OrangeDown":8,
-                  "OrangeLeft":10,
-                  "OrangeRight":10,
-                  "BlueLeft":11,
-                  "BluRight":12,
-                  "TopCon":"",
-                  "LeftCon":"Blue",
-                  "RightCon":"Blue",
-                  "DownCon":"Purple",
-                  "ShirtNumber":7,
-                  "image":"jug_73.png"
-                  },
-                  {
-                  "Name":"ALPINO",
-                  "Positions":[{"Position":7},{"Position":8},{"Position":10},{"Position":11}],
-                  "HumanCost":-3,
-                  "MoneyCost":15,
-                  "YellowTop":11,
-                  "RedTop":11,
-                  "OrangeDown":10,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Yellow",
-                  "LeftCon":"",
-                  "RightCon":"Blue",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":11,
-                  "image":"jug_74.png"
-                  },
-                  {
-                  "Name":"LIPSCHITZZ",
-                  "Positions":[{"Position":2},{"Position":3},{"Position":4},{"Position":7},{"Position":8}],
-                  "HumanCost":-3,
-                  "MoneyCost":18,
-                  "YellowTop":12,
-                  "RedTop":0,
-                  "OrangeDown":11,
-                  "OrangeLeft":10,
-                  "OrangeRight":0,
-                  "BlueLeft":11,
-                  "BluRight":0,
-                  "TopCon":"Purple",
-                  "LeftCon":"Orange",
-                  "RightCon":"Purple",
-                  "DownCon":"Orange",
-                  "ShirtNumber":14,
-                  "image":"jug_75.png"
-                  },
-                  {
-                  "Name":"SAMUEL",
-                  "Positions":[{"Position":9}],
-                  "HumanCost":-3,
-                  "MoneyCost":15,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":10,
-                  "BlueLeft":0,
-                  "BluRight":12,
-                  "TopCon":"",
-                  "LeftCon":"Blue",
-                  "RightCon":"",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":15,
-                  "image":"jug_76.png"
-                  },
-                  {
-                  "Name":"ARTACHO",
-                  "Positions":[{"Position":10},{"Position":11}],
-                  "HumanCost":-3,
-                  "MoneyCost":15,
-                  "YellowTop":0,
-                  "RedTop":12,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"Blue",
-                  "RightCon":"Blue",
-                  "DownCon":"",
-                  "ShirtNumber":19,
-                  "image":"jug_77.png"
-                  },
-                  {
-                  "Name":"USHIKAI",
-                  "Positions":[{"Position":3},{"Position":4}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":1,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Purple",
-                  "LeftCon":"Purple",
-                  "RightCon":"Purple",
-                  "DownCon":"",
-                  "ShirtNumber":71,
-                  "image":"jug_78.png"
-                  },
-                  {
-                  "Name":"SALAS",
-                  "Positions":[{"Position":3},{"Position":4}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":1,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Purple",
-                  "LeftCon":"Purple",
-                  "RightCon":"Purple",
-                  "DownCon":"",
-                  "ShirtNumber":72,
-                  "image":"jug_79.png"
-                  },
-                  {
-                  "Name":"ADRIÁN",
-                  "Positions":[{"Position":3},{"Position":4}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":1,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Purple",
-                  "LeftCon":"Purple",
-                  "RightCon":"Purple",
-                  "DownCon":"",
-                  "ShirtNumber":73,
-                  "image":"jug_80.png"
-                  },
-                  {
-                  "Name":"FRANCIS",
-                  "Positions":[{"Position":2},{"Position":5}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":1,
-                  "OrangeRight":1,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Yellow",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":74,
-                  "image":"jug_81.png"
-                  },
-                  {
-                  "Name":"KALARIEN",
-                  "Positions":[{"Position":2},{"Position":5}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":1,
-                  "OrangeRight":1,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Yellow",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":75,
-                  "image":"jug_82.png"
-                  },
-                  {
-                  "Name":"GATO",
-                  "Positions":[{"Position":2},{"Position":5}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":1,
-                  "OrangeRight":1,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Yellow",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":76,
-                  "image":"jug_83.png"
-                  },
-                  {
-                  "Name":"DANZC",
-                  "Positions":[{"Position":7},{"Position":8}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":1,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Yellow",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":71,
-                  "image":"jug_84.png"
-                  },
-                  {
-                  "Name":"SHINTAHID",
-                  "Positions":[{"Position":7},{"Position":8}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":1,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Yellow",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":78,
-                  "image":"jug_85.png"
-                  },
-                  {
-                  "Name":"BEDOYA",
-                  "Positions":[{"Position":7},{"Position":8}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":1,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"Yellow",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":79,
-                  "image":"jug_86.png"
-                  },
-                  {
-                  "Name":"VALDEMARAS",
-                  "Positions":[{"Position":6},{"Position":9}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":1,
-                  "BluRight":1,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"Blue",
-                  "DownCon":"",
-                  "ShirtNumber":80,
-                  "image":"jug_87.png"
-                  },
-                  {
-                  "Name":"RAIK",
-                  "Positions":[{"Position":6},{"Position":9}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":1,
-                  "BluRight":1,
-                  "TopCon":"",
-                  "LeftCon":"Blue",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":81,
-                  "image":"jug_88.png"
-                  },
-                  {
-                  "Name":"DAVIDIC",
-                  "Positions":[{"Position":6},{"Position":9}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":0,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":1,
-                  "BluRight":1,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":82,
-                  "image":"jug_89.png"
-                  },
-                  {
-                  "Name":"PEDROTRONIC",
-                  "Positions":[{"Position":10},{"Position":11}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":1,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"Blue",
-                  "DownCon":"",
-                  "ShirtNumber":83,
-                  "image":"jug_90.png"
-                  },
-                  {
-                  "Name":"TORLEN",
-                  "Positions":[{"Position":10},{"Position":11}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":1,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"Blue",
-                  "RightCon":"",
-                  "DownCon":"",
-                  "ShirtNumber":84,
-                  "image":"jug_91.png"
-                  },
-                  {
-                  "Name":"TONE",
-                  "Positions":[{"Position":10},{"Position":11}],
-                  "HumanCost":-1,
-                  "MoneyCost":3,
-                  "YellowTop":0,
-                  "RedTop":1,
-                  "OrangeDown":0,
-                  "OrangeLeft":0,
-                  "OrangeRight":0,
-                  "BlueLeft":0,
-                  "BluRight":0,
-                  "TopCon":"",
-                  "LeftCon":"",
-                  "RightCon":"",
-                  "DownCon":"Yellow",
-                  "ShirtNumber":85,
-                  "image":"jug_91.png"
-                  }
-                 ]
-       }
+{
+    "Players": {
+        "Player": [
+                   {
+                   "Name": "LAGARTOS CF",
+                   "Positions": [
+                                 {
+                                 "Position": 1
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 2,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 91,
+                   "image": "jug_2.png"
+                   },
+                   {
+                   "Name": "LAGARTOS CF",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 2,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 1,
+                   "OrangeRight": 1,
+                   "BlueLeft": 1,
+                   "BlueRight": 1,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 92,
+                   "image": "jug_3.png"
+                   },
+                   {
+                   "Name": "LAGARTOS CF",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 },
+                                 {
+                                 "Position": 3
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 2,
+                   "YellowTop": 1,
+                   "TopRight": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 93,
+                   "image": "jug_4.png"
+                   },
+                   {
+                   "Name": "LAGARTOS CF",
+                   "Positions": [
+                                 {
+                                 "Position": 6
+                                 },
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 2,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 1,
+                   "OrangeRight": 1,
+                   "BlueLeft": 1,
+                   "BlueRight": 1,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 94,
+                   "image": "jug_5.png"
+                   },
+                   {
+                   "Name": "LAGARTOS CF",
+                   "Positions": [
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 2,
+                   "YellowTop": 1,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 95,
+                   "image": "jug_6.png"
+                   },
+                   {
+                   "Name": "LAGARTOS CF",
+                   "Positions": [
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 2,
+                   "YellowTop": 0,
+                   "RedTop": 1,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 96,
+                   "image": "jug_7.png"
+                   },
+                   {
+                   "Name": "JULIO ALBERTO",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 },
+                                 {
+                                 "Position": 6
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 4,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 2,
+                   "OrangeRight": 0,
+                   "BlueLeft": 3,
+                   "BlueRight": 0,
+                   "TopCon": "Yellow",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 3,
+                   "image": "jug_26.png"
+                   },
+                   {
+                   "Name": "MIGUELÓN",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 },
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 },
+                                 {
+                                 "Position": 5
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 6,
+                   "YellowTop": 1,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 2,
+                   "OrangeRight": 1,
+                   "BlueLeft": 1,
+                   "BlueRight": 1,
+                   "TopCon": "Yellow",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 4,
+                   "image": "jug_27.png"
+                   },
+                   {
+                   "Name": "DANI",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 1,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Purple",
+                   "LeftCon": "",
+                   "RightCon": "Purple",
+                   "DownCon": "",
+                   "ShirtNumber": 5,
+                   "image": "jug_28.png"
+                   },
+                   {
+                   "Name": "EROS",
+                   "Positions": [
+                                 {
+                                 "Position": 6
+                                 },
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 4,
+                   "YellowTop": 2,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 1,
+                   "OrangeRight": 0,
+                   "BlueLeft": 2,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "Blue",
+                   "DownCon": "",
+                   "ShirtNumber": 8,
+                   "image": "jug_29.png"
+                   },
+                   {
+                   "Name": "LEMACHINGA",
+                   "Positions": [
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 },
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 4,
+                   "YellowTop": 1,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 2,
+                   "BlueRight": 0,
+                   "TopCon": "Red",
+                   "LeftCon": "",
+                   "RightCon": "Blue",
+                   "DownCon": "",
+                   "ShirtNumber": 18,
+                   "image": "jug_30.png"
+                   },
+                   {
+                   "Name": "FUCH",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 },
+                                 {
+                                 "Position": 5
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 4,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 1,
+                   "OrangeRight": 3,
+                   "BlueLeft": 1,
+                   "BlueRight": 2,
+                   "TopCon": "Purple",
+                   "LeftCon": "Orange",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 20,
+                   "image": "jug_31.png"
+                   },
+                   {
+                   "Name": "ALBERTOTOWER",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 },
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 4,
+                   "YellowTop": 2,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "Purple",
+                   "RightCon": "",
+                   "DownCon": "Orange",
+                   "ShirtNumber": 23,
+                   "image": "jug_32.png"
+                   },
+                   {
+                   "Name": "JONNYUTAH",
+                   "Positions": [
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 2,
+                   "BlueLeft": 0,
+                   "BlueRight": 2,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "Purple",
+                   "ShirtNumber": 24,
+                   "image": "jug_33.png"
+                   },
+                   {
+                   "Name": "STEPHANE",
+                   "Positions": [
+                                 {
+                                 "Position": 1
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 4,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 3,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 25,
+                   "image": "jug_34.png"
+                   },
+                   {
+                   "Name": "JON",
+                   "Positions": [
+                                 {
+                                 "Position": 1
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 2,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 26,
+                   "image": "jug_35.png"
+                   },
+                   {
+                   "Name": "SANCHO",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 },
+                                 {
+                                 "Position": 5
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 4,
+                   "YellowTop": 1,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 1,
+                   "BlueLeft": 0,
+                   "BlueRight": 1,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "Orange",
+                   "DownCon": "Orange",
+                   "ShirtNumber": 27,
+                   "image": "jug_36.png"
+                   },
+                   {
+                   "Name": "ZEEFRES",
+                   "Positions": [
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 4,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 2,
+                   "BlueLeft": 0,
+                   "BlueRight": 3,
+                   "TopCon": "",
+                   "LeftCon": "Blue",
+                   "RightCon": "",
+                   "DownCon": "Purple",
+                   "ShirtNumber": 28,
+                   "image": "jug_37.png"
+                   },
+                   {
+                   "Name": "ERIC DRAVEN",
+                   "Positions": [
+                                 {
+                                 "Position": 9
+                                 },
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 4,
+                   "YellowTop": 0,
+                   "RedTop": 2,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 1,
+                   "BlueLeft": 0,
+                   "BlueRight": 1,
+                   "TopCon": "",
+                   "LeftCon": "Blue",
+                   "RightCon": "",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 29,
+                   "image": "jug_38.png"
+                   },
+                   {
+                   "Name": "JAVIEW LOZANO",
+                   "Positions": [
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 2,
+                   "YellowTop": 1,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "Purple",
+                   "RightCon": "",
+                   "DownCon": "Purple",
+                   "ShirtNumber": 32,
+                   "image": "jug_39.png"
+                   },
+                   {
+                   "Name": "GEORGIRION",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 2,
+                   "YellowTop": 1,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "Purple",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 34,
+                   "image": "jug_40.png"
+                   },
+                   {
+                   "Name": "NUBARIS",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 },
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 },
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 6,
+                   "YellowTop": 2,
+                   "RedTop": 1,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "Blue",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 38,
+                   "image": "jug_41.png"
+                   },
+                   {
+                   "Name": "DIAMONT",
+                   "Positions": [
+                                 {
+                                 "Position": 5
+                                 },
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 1,
+                   "BlueLeft": 0,
+                   "BlueRight": 2,
+                   "TopCon": "Yellow",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 43,
+                   "image": "jug_42.png"
+                   },
+                   {
+                   "Name": "UKIC",
+                   "Positions": [
+                                 {
+                                 "Position": 6
+                                 },
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 1,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 1,
+                   "OrangeRight": 0,
+                   "BlueLeft": 2,
+                   "BlueRight": 0,
+                   "TopCon": "Yellow",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 44,
+                   "image": "jug_43.png"
+                   },
+                   {
+                   "Name": "DONKIJOTE",
+                   "Positions": [
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 2,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "Purple",
+                   "ShirtNumber": 46,
+                   "image": "jug_44.png"
+                   },
+                   {
+                   "Name": "GELATAO",
+                   "Positions": [
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 69,
+                   "image": "jug_45.png"
+                   },
+                   {
+                   "Name": "C.BENMAC",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 },
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 },
+                                 {
+                                 "Position": 5
+                                 }
+                                 ],
+                   "HumanCost": 0,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "Purple",
+                   "RightCon": "Purlpe",
+                   "DownCon": "",
+                   "ShirtNumber": 97,
+                   "image": "jug_46.png"
+                   },
+                   {
+                   "Name": "ANDRÉS LOZANO",
+                   "Positions": [
+                                 {
+                                 "Position": 6
+                                 },
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 },
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": 0,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Purple",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "Purple",
+                   "ShirtNumber": 98,
+                   "image": "jug_47.png"
+                   },
+                   {
+                   "Name": "DOC JUNIOR",
+                   "Positions": [
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": 0,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "Purple",
+                   "RightCon": "Purple",
+                   "DownCon": "Purple",
+                   "ShirtNumber": 99,
+                   "image": "jug_48.png"
+                   },
+                   {
+                   "Name": "KALAMIDAD",
+                   "Positions": [
+                                 {
+                                 "Position": 5
+                                 },
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 10,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 9,
+                   "BlueLeft": 0,
+                   "BlueRight": 9,
+                   "TopCon": "Yellow",
+                   "LeftCon": "Purple",
+                   "RightCon": "",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 2,
+                   "image": "jug_49.png"
+                   },
+                   {
+                   "Name": "POTAJACIÓN",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 8,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 5,
+                   "OrangeRight": 0,
+                   "BlueLeft": 5,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "Orange",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 17,
+                   "image": "jug_50.png"
+                   },
+                   {
+                   "Name": "OLADOLA",
+                   "Positions": [
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 },
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 12,
+                   "YellowTop": 10,
+                   "RedTop": 0,
+                   "OrangeDown": 9,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 10,
+                   "BlueLeft": 0,
+                   "BlueRight": 10,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 21,
+                   "image": "jug_51.png"
+                   },
+                   {
+                   "Name": "ROCINANTE",
+                   "Positions": [
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 8,
+                   "YellowTop": 6,
+                   "RedTop": 0,
+                   "OrangeDown": 5,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Yellow",
+                   "LeftCon": "Purple",
+                   "RightCon": "Purple",
+                   "DownCon": "",
+                   "ShirtNumber": 23,
+                   "image": "jug_52.png"
+                   },
+                   {
+                   "Name": "FRAN MOLI",
+                   "Positions": [
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 },
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 9,
+                   "YellowTop": 7,
+                   "RedTop": 7,
+                   "OrangeDown": 5,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 30,
+                   "image": "jug_53.png"
+                   },
+                   {
+                   "Name": "BUCCI",
+                   "Positions": [
+                                 {
+                                 "Position": 1
+                                 },
+                                 {
+                                 "Position": 5
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 9,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 7,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 6,
+                   "BlueLeft": 0,
+                   "BlueRight": 5,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 31,
+                   "image": "jug_54.png"
+                   },
+                   {
+                   "Name": "CEVASCO",
+                   "Positions": [
+                                 {
+                                 "Position": 1
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 7,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 6,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 35,
+                   "image": "jug_55.png"
+                   },
+                   {
+                   "Name": "ARISTARK",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 7,
+                   "YellowTop": 4,
+                   "RedTop": 0,
+                   "OrangeDown": 6,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "Purple",
+                   "DownCon": "",
+                   "ShirtNumber": 39,
+                   "image": "jug_56.png"
+                   },
+                   {
+                   "Name": "STOICAKOVIC",
+                   "Positions": [
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 8,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Red",
+                   "LeftCon": "Blue",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 40,
+                   "image": "jug_57.png"
+                   },
+                   {
+                   "Name": "MONTERO",
+                   "Positions": [
+                                 {
+                                 "Position": 6
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 8,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 6,
+                   "OrangeRight": 0,
+                   "BlueLeft": 7,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "Purple",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 41,
+                   "image": "jug_58.png"
+                   },
+                   {
+                   "Name": "AKUMO",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 6,
+                   "YellowTop": 3,
+                   "RedTop": 0,
+                   "OrangeDown": 5,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 45,
+                   "image": "jug_59.png"
+                   },
+                   {
+                   "Name": "CÁRDENAS",
+                   "Positions": [
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 7,
+                   "YellowTop": 0,
+                   "RedTop": 6,
+                   "OrangeDown": 5,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 47,
+                   "image": "jug_60.png"
+                   },
+                   {
+                   "Name": "AMARILLO",
+                   "Positions": [
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 11,
+                   "YellowTop": 0,
+                   "RedTop": 8,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Red",
+                   "LeftCon": "Blue",
+                   "RightCon": "Blue",
+                   "DownCon": "",
+                   "ShirtNumber": 9,
+                   "image": "jug_61.png"
+                   },
+                   {
+                   "Name": "MUSABAI",
+                   "Positions": [
+                                 {
+                                 "Position": 9
+                                 },
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 9,
+                   "YellowTop": 0,
+                   "RedTop": 5,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 4,
+                   "BlueLeft": 6,
+                   "BlueRight": 0,
+                   "TopCon": "Red",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 10,
+                   "image": "jug_62.png"
+                   },
+                   {
+                   "Name": "ALFALSECAS",
+                   "Positions": [
+                                 {
+                                 "Position": 1
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 10,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 8,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 13,
+                   "image": "jug_63.png"
+                   },
+                   {
+                   "Name": "KSUCO",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 11,
+                   "YellowTop": 10,
+                   "RedTop": 0,
+                   "OrangeDown": 9,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Purple",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 16,
+                   "image": "jug_64.png"
+                   },
+                   {
+                   "Name": "MODOFARK",
+                   "Positions": [
+                                 {
+                                 "Position": 1
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 8,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 7,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 22,
+                   "image": "jug_65.png"
+                   },
+                   {
+                   "Name": "WILSON SMITH",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 },
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 10,
+                   "YellowTop": 9,
+                   "RedTop": 0,
+                   "OrangeDown": 8,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Purple",
+                   "LeftCon": "",
+                   "RightCon": "Purple",
+                   "DownCon": "Purple",
+                   "ShirtNumber": 33,
+                   "image": "jug_66.png"
+                   },
+                   {
+                   "Name": "LAPIE",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 },
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 13,
+                   "YellowTop": 9,
+                   "RedTop": 0,
+                   "OrangeDown": 9,
+                   "OrangeLeft": 8,
+                   "OrangeRight": 0,
+                   "BlueLeft": 8,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "Orange",
+                   "RightCon": "",
+                   "DownCon": "Orange",
+                   "ShirtNumber": 36,
+                   "image": "jug_67.png"
+                   },
+                   {
+                   "Name": "PAPIPO",
+                   "Positions": [
+                                 {
+                                 "Position": 6
+                                 },
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 12,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 9,
+                   "OrangeRight": 9,
+                   "BlueLeft": 10,
+                   "BlueRight": 10,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 37,
+                   "image": "jug_68.png"
+                   },
+                   {
+                   "Name": "DAMIAN",
+                   "Positions": [
+                                 {
+                                 "Position": 6
+                                 },
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 8,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 6,
+                   "OrangeRight": 0,
+                   "BlueLeft": 6,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "Purple",
+                   "RightCon": "Purple",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 42,
+                   "image": "jug_69.png"
+                   },
+                   {
+                   "Name": "YOSI",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -2,
+                   "MoneyCost": 9,
+                   "YellowTop": 6,
+                   "RedTop": 0,
+                   "OrangeDown": 6,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "Orange",
+                   "ShirtNumber": 51,
+                   "image": "jug_70.png"
+                   },
+                   {
+                   "Name": "JSPER",
+                   "Positions": [
+                                 {
+                                 "Position": 1
+                                 },
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -3,
+                   "MoneyCost": 15,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 12,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 8,
+                   "BlueLeft": 0,
+                   "BlueRight": 11,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 1,
+                   "image": "jug_71.png"
+                   },
+                   {
+                   "Name": "RASCOLNIKOV",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -3,
+                   "MoneyCost": 16,
+                   "YellowTop": 11,
+                   "RedTop": 0,
+                   "OrangeDown": 10,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "Purple",
+                   "DownCon": "Orange",
+                   "ShirtNumber": 6,
+                   "image": "jug_72.png"
+                   },
+                   {
+                   "Name": "PABLO #.",
+                   "Positions": [
+                                 {
+                                 "Position": 6
+                                 },
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 },
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -3,
+                   "MoneyCost": 17,
+                   "YellowTop": 11,
+                   "RedTop": 0,
+                   "OrangeDown": 8,
+                   "OrangeLeft": 10,
+                   "OrangeRight": 10,
+                   "BlueLeft": 11,
+                   "BlueRight": 12,
+                   "TopCon": "",
+                   "LeftCon": "Blue",
+                   "RightCon": "Blue",
+                   "DownCon": "Purple",
+                   "ShirtNumber": 7,
+                   "image": "jug_73.png"
+                   },
+                   {
+                   "Name": "ALPINO",
+                   "Positions": [
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 },
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -3,
+                   "MoneyCost": 15,
+                   "YellowTop": 11,
+                   "RedTop": 11,
+                   "OrangeDown": 10,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Yellow",
+                   "LeftCon": "",
+                   "RightCon": "Blue",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 11,
+                   "image": "jug_74.png"
+                   },
+                   {
+                   "Name": "LIPSCHITZZ",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 },
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 },
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 }
+                                 ],
+                   "HumanCost": -3,
+                   "MoneyCost": 18,
+                   "YellowTop": 12,
+                   "RedTop": 0,
+                   "OrangeDown": 11,
+                   "OrangeLeft": 10,
+                   "OrangeRight": 0,
+                   "BlueLeft": 11,
+                   "BlueRight": 0,
+                   "TopCon": "Purple",
+                   "LeftCon": "Orange",
+                   "RightCon": "Purple",
+                   "DownCon": "Orange",
+                   "ShirtNumber": 14,
+                   "image": "jug_75.png"
+                   },
+                   {
+                   "Name": "SAMUEL",
+                   "Positions": [
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -3,
+                   "MoneyCost": 15,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 10,
+                   "BlueLeft": 0,
+                   "BlueRight": 12,
+                   "TopCon": "",
+                   "LeftCon": "Blue",
+                   "RightCon": "",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 15,
+                   "image": "jug_76.png"
+                   },
+                   {
+                   "Name": "ARTACHO",
+                   "Positions": [
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -3,
+                   "MoneyCost": 15,
+                   "YellowTop": 0,
+                   "RedTop": 12,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "Blue",
+                   "RightCon": "Blue",
+                   "DownCon": "",
+                   "ShirtNumber": 19,
+                   "image": "jug_77.png"
+                   },
+                   {
+                   "Name": "USHIKAI",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Purple",
+                   "LeftCon": "Purple",
+                   "RightCon": "Purple",
+                   "DownCon": "",
+                   "ShirtNumber": 71,
+                   "image": "jug_78.png"
+                   },
+                   {
+                   "Name": "SALAS",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Purple",
+                   "LeftCon": "Purple",
+                   "RightCon": "Purple",
+                   "DownCon": "",
+                   "ShirtNumber": 72,
+                   "image": "jug_79.png"
+                   },
+                   {
+                   "Name": "ADRIÁN",
+                   "Positions": [
+                                 {
+                                 "Position": 3
+                                 },
+                                 {
+                                 "Position": 4
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 1,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Purple",
+                   "LeftCon": "Purple",
+                   "RightCon": "Purple",
+                   "DownCon": "",
+                   "ShirtNumber": 73,
+                   "image": "jug_80.png"
+                   },
+                   {
+                   "Name": "FRANCIS",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 },
+                                 {
+                                 "Position": 5
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 1,
+                   "OrangeRight": 1,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Yellow",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 74,
+                   "image": "jug_81.png"
+                   },
+                   {
+                   "Name": "KALARIEN",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 },
+                                 {
+                                 "Position": 5
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 1,
+                   "OrangeRight": 1,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Yellow",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 75,
+                   "image": "jug_82.png"
+                   },
+                   {
+                   "Name": "GATO",
+                   "Positions": [
+                                 {
+                                 "Position": 2
+                                 },
+                                 {
+                                 "Position": 5
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 1,
+                   "OrangeRight": 1,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Yellow",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 76,
+                   "image": "jug_83.png"
+                   },
+                   {
+                   "Name": "DANZC",
+                   "Positions": [
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 1,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Yellow",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 71,
+                   "image": "jug_84.png"
+                   },
+                   {
+                   "Name": "SHINTAHID",
+                   "Positions": [
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 1,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Yellow",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 78,
+                   "image": "jug_85.png"
+                   },
+                   {
+                   "Name": "BEDOYA",
+                   "Positions": [
+                                 {
+                                 "Position": 7
+                                 },
+                                 {
+                                 "Position": 8
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 1,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "Yellow",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 79,
+                   "image": "jug_86.png"
+                   },
+                   {
+                   "Name": "VALDEMARAS",
+                   "Positions": [
+                                 {
+                                 "Position": 6
+                                 },
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 1,
+                   "BlueRight": 1,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "Blue",
+                   "DownCon": "",
+                   "ShirtNumber": 80,
+                   "image": "jug_87.png"
+                   },
+                   {
+                   "Name": "RAIK",
+                   "Positions": [
+                                 {
+                                 "Position": 6
+                                 },
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 1,
+                   "BlueRight": 1,
+                   "TopCon": "",
+                   "LeftCon": "Blue",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 81,
+                   "image": "jug_88.png"
+                   },
+                   {
+                   "Name": "DAVIDIC",
+                   "Positions": [
+                                 {
+                                 "Position": 6
+                                 },
+                                 {
+                                 "Position": 9
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 0,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 1,
+                   "BlueRight": 1,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 82,
+                   "image": "jug_89.png"
+                   },
+                   {
+                   "Name": "PEDROTRONIC",
+                   "Positions": [
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 1,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "Blue",
+                   "DownCon": "",
+                   "ShirtNumber": 83,
+                   "image": "jug_90.png"
+                   },
+                   {
+                   "Name": "TORLEN",
+                   "Positions": [
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 1,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "Blue",
+                   "RightCon": "",
+                   "DownCon": "",
+                   "ShirtNumber": 84,
+                   "image": "jug_91.png"
+                   },
+                   {
+                   "Name": "TONE",
+                   "Positions": [
+                                 {
+                                 "Position": 10
+                                 },
+                                 {
+                                 "Position": 11
+                                 }
+                                 ],
+                   "HumanCost": -1,
+                   "MoneyCost": 3,
+                   "YellowTop": 0,
+                   "RedTop": 1,
+                   "OrangeDown": 0,
+                   "OrangeLeft": 0,
+                   "OrangeRight": 0,
+                   "BlueLeft": 0,
+                   "BlueRight": 0,
+                   "TopCon": "",
+                   "LeftCon": "",
+                   "RightCon": "",
+                   "DownCon": "Yellow",
+                   "ShirtNumber": 85,
+                   "image": "jug_91.png"
+                   }
+                   ]
+    }
 }

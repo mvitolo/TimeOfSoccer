@@ -89,26 +89,98 @@ public class TOSCalculator {
         return false
     }
     
+    func getLinkModifierForPosition(positionIndex: Int) ->Int{
+        
+        var color = NSString()
+        var position = NSString()
+        
+        switch positionIndex{
+        case 1:
+            return 0
+        case 2:
+            color = "Orange"
+            position = "LeftCon"
+        case 3:
+            color = "Orange"
+            position = "DownCon"
+        case 4:
+            color = "Orange"
+            position = "DownCon"
+        case 5:
+            color = "Orange"
+            position = "RightCon"
+        case 6:
+            return 0
+        case 7:
+            return 0
+        case 8:
+            return 0
+        case 9:
+            return 0
+        case 10:
+            color = "Red"
+            position = "TopCon"
+        case 11:
+            color = "Red"
+            position = "TopCon"
+        default:
+            return 0
+        }
+        var res = 0
+        let player = team.objectForKey(positionIndex) as! NSDictionary
+        if ( player.count == 0 ){
+            return res
+        }
+        if ((player.objectForKey(position) as! NSString).isEqualToString(color as String)){
+            res = 2
+        }
+        return res
+    }
+    
     func getModifierForPosition(positionIndex: Int) ->NSString{
         switch positionIndex{
         case 1:
             return "OrangeDown"
         case 2:
+            if ( isPlayerAttacModule(positionIndex)){
+                return "BlueLeft"
+            }
             return "OrangeLeft"
         case 3:
+            if ( isPlayerAttacModule(positionIndex)){
+                return "YellowTop"
+            }
             return "OrangeDown"
         case 4:
+            if ( isPlayerAttacModule(positionIndex)){
+                return "YellowTop"
+            }
             return "OrangeDown"
         case 5:
+            if ( isPlayerAttacModule(positionIndex)){
+                return "BlueRight"
+            }
             return "OrangeRight"
         case 6:
-            return "BlueLeft"
+            if ( isPlayerAttacModule(positionIndex)){
+                return "BlueLeft"
+            }
+            return "OrangeLeft"
         case 7:
-            return "YellowTop"
+            if ( isPlayerAttacModule(positionIndex)){
+                return "YellowTop"
+            }
+            return "OrangeDown"
         case 8:
-            return "YellowTop"
+            if ( isPlayerAttacModule(positionIndex)){
+                return "YellowTop"
+            }
+            return "OrangeDown"
         case 9:
-            return "BlueRight"
+            if ( isPlayerAttacModule(positionIndex)){
+                return "BlueRight"
+            }
+            return "OrangeRight"
         case 10:
             return "RedTop"
         case 11:
@@ -350,6 +422,10 @@ public class TOSCalculator {
         
         result += coachmodifier
         
+        var linkmodifier = 0
+        linkmodifier = getLinkModifierForPosition(playerPosition)
+        result += linkmodifier
+        
         return result
     }
     
@@ -372,6 +448,19 @@ public class TOSCalculator {
     
     func calculateDefense() -> Int{
         return calculateModule("DefenseModule")
+    }
+    
+    func isPlayerAttacModule(playerPosition:Int) ->Bool {
+     
+        let attackModule = coach1.objectForKey("AttackModule") as! NSArray
+        
+        for player in  attackModule {
+            let playernumber = player.objectForKey("Player") as! Int
+            if (playernumber == playerPosition){
+                return true
+            }
+        }
+        return false
     }
     
 
