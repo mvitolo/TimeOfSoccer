@@ -1120,6 +1120,44 @@
                   "DownCon":"",
                   "ShirtNumber":71,
                   "image":"jug_78.png"
+                  },
+                  {
+                  "Name":"SALAS",
+                  "Positions":[{"Position":3},{"Position":4}],
+                  "HumanCost":-1,
+                  "MoneyCost":3,
+                  "YellowTop":0,
+                  "RedTop":0,
+                  "OrangeDown":1,
+                  "OrangeLeft":0,
+                  "OrangeRight":0,
+                  "BlueLeft":0,
+                  "BluRight":0,
+                  "TopCon":"Purple",
+                  "LeftCon":"Purple",
+                  "RightCon":"Purple",
+                  "DownCon":"",
+                  "ShirtNumber":72,
+                  "image":"jug_79.png"
+                  },
+                  {
+                  "Name":"ADRIÁN",
+                  "Positions":[{"Position":3},{"Position":4}],
+                  "HumanCost":-1,
+                  "MoneyCost":3,
+                  "YellowTop":0,
+                  "RedTop":0,
+                  "OrangeDown":1,
+                  "OrangeLeft":0,
+                  "OrangeRight":0,
+                  "BlueLeft":0,
+                  "BluRight":0,
+                  "TopCon":"Purple",
+                  "LeftCon":"Purple",
+                  "RightCon":"Purple",
+                  "DownCon":"",
+                  "ShirtNumber":73,
+                  "image":"jug_80.png"
                   }
                  ]
        }
