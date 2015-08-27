@@ -57,7 +57,8 @@ public class TOSCalculator {
     
     func addCoachToPosition(CoachName:String, position:Int) -> Bool{
         for coach in coaches {
-            if ((coach as! NSDictionary).objectForKey("Name") as! NSString).isEqualToString(CoachName) {
+            let coachname = (coach as! NSDictionary).objectForKey("Name") as! NSString
+            if coachname.isEqualToString(CoachName) {
                 if (position == 1){
                     coach1 = coach as! NSDictionary
                     return true
@@ -65,7 +66,7 @@ public class TOSCalculator {
                     coach2 = coach as! NSDictionary
                     return true
                 }else if (position == 3){
-                    coach2 = coach as! NSDictionary
+                    coach3 = coach as! NSDictionary
                     return true
                 }
             }
@@ -213,7 +214,7 @@ public class TOSCalculator {
             }
             let otherString = nextplayer.objectForKey("RightCon") as! NSString
             if (connString.isEqualToString(otherString as String)){
-                if (!connString.isEqualToString("B")){
+                if (!connString.isEqualToString("Blue")){
                     modifier = 0
                 }
                 res = 1 + modifier
@@ -224,8 +225,12 @@ public class TOSCalculator {
             if ( nextplayer.count > 0){
                 let connString = player.objectForKey("LeftCon") as! NSString
                 let otherString = nextplayer.objectForKey("RightCon") as! NSString
-                if (connString.isEqualToString(otherString as String) && connString.isEqualToString("B")){
-                    res += 3
+                if (connString.isEqualToString(otherString as String)){
+                    if ( connString.isEqualToString("Blue") ){
+                        res += 3
+                    }else{
+                        res += 1
+                    }
                 }
             }
         }
@@ -256,7 +261,7 @@ public class TOSCalculator {
             }
             let otherString = nextplayer.objectForKey("LeftCon") as! NSString
             if (connString.isEqualToString(otherString as String)){
-                if (!connString.isEqualToString("B")){
+                if (!connString.isEqualToString("Blue")){
                     modifier = 0
                 }
 
@@ -268,8 +273,12 @@ public class TOSCalculator {
             if ( nextplayer.count > 0){
                 let connString = player.objectForKey("RightCon") as! NSString
                 let otherString = nextplayer.objectForKey("LeftCon") as! NSString
-                if (connString.isEqualToString(otherString as String) && connString.isEqualToString("B")){
-                    res += 3
+                if (connString.isEqualToString(otherString as String)){
+                    if ( connString.isEqualToString("Blue") ){
+                        res += 3
+                    }else{
+                        res += 1
+                    }
                 }
             }
         }
@@ -304,7 +313,7 @@ public class TOSCalculator {
             
             let otherString = nextplayer.objectForKey("TopCon") as! NSString
             if (connString.isEqualToString(otherString as String)){
-                if (!connString.isEqualToString("Y")){
+                if (!connString.isEqualToString("Yellow")){
                     modifier = 0
                 }
                 res = 1 + modifier
@@ -317,7 +326,7 @@ public class TOSCalculator {
     func getTopConnection(positionIndex: Int) -> Int{
         var res = 0
         let player = team.objectForKey(positionIndex) as! NSDictionary
-        if ( player.count == 0 || positionIndex > 10 || positionIndex == 6 || positionIndex == 9){
+        if ( player.count == 0 || positionIndex > 9 || positionIndex == 6 || positionIndex == 9){
             return res
         }
         var nextPosition = 0
@@ -336,8 +345,6 @@ public class TOSCalculator {
         
         if ( positionIndex == 3 || positionIndex == 4 ){
             modifier = 0
-        }else if ( !((player.objectForKey("DownCon") as! NSString).isEqualToString("Y")) ){
-            return 0
         }
         
         let nextplayer = team.objectForKey(nextPosition) as! NSDictionary
@@ -345,7 +352,7 @@ public class TOSCalculator {
             
             let otherString = nextplayer.objectForKey("DownCon") as! NSString
             if (connString.isEqualToString(otherString as String)){
-                if (!connString.isEqualToString("Y")){
+                if (!connString.isEqualToString("Yellow")){
                     modifier = 0
                 }
                 res = 1 + modifier
@@ -406,7 +413,7 @@ public class TOSCalculator {
         let teamplayer = team.objectForKey(playerPosition) as! NSDictionary
         
         if(teamplayer.count == 0) {
-            return -3
+            return -2
         }
         let res = teamplayer.objectForKey(getModifierForPosition(playerPosition)) as! Int
         result += res
