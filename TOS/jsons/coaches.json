@@ -83,10 +83,10 @@
                  
                  "AttackModule":[{"Player":7},{"Player":8},{"Player":9},{"Player":10},{"Player":11}],
                  "Blue":0,
-                 "Yellow":1,
+                 "Yellow":2,
                  "Red":0,
                  "Orange":0,
-                 "Purple":2,
+                 "Purple":1,
                  "image":"ent_9.png"
                  },
                  

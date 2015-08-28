@@ -74,15 +74,19 @@ public class TOSCalculator {
         return false
     }
     
-    func addPlayerToTeam(shirtnumber: Int, position:Int) ->Bool {
+    func addPlayerToTeam(shirtnumber: Int, playerName: String, position:Int) ->Bool {
         for player in players {
             if (player as! NSDictionary).objectForKey("ShirtNumber") as! Int == shirtnumber {
-                let playerPositions = (player.objectForKey("Positions") as! NSArray)
                 
-                for playerPosition in playerPositions {
-                    if ((playerPosition.objectForKey("Position") as! Int) == position){
-                        team[position] = player
-                        return true
+                if ((player as! NSDictionary).objectForKey("Name") as! NSString).isEqualToString(playerName) || playerName == ""{
+                
+                    let playerPositions = (player.objectForKey("Positions") as! NSArray)
+                
+                    for playerPosition in playerPositions {
+                        if ((playerPosition.objectForKey("Position") as! Int) == position){
+                            team[position] = player
+                            return true
+                        }
                     }
                 }
             }

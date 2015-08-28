@@ -36,26 +36,26 @@ class TOSCalculatorTests: XCTestCase {
     func testAddGoalkeeperToWrongPosition(){
         //We know that the goalkeeper has number 91
         //Let's add it as midfielder position 7
-        let result = TOSCalculator.sharedInstance.addPlayerToTeam(91, position: 7) as Bool
+        let result = TOSCalculator.sharedInstance.addPlayerToTeam(91, playerName: "", position: 7) as Bool
         XCTAssertFalse(result, String(format:"%s",__FUNCTION__))
     }
     
     func testAddGoalkeeperToRightPosition(){
         //We know that the goalkeeper has number 91
         //Let's add it as 1 Position
-        let result = TOSCalculator.sharedInstance.addPlayerToTeam(91, position: 1) as Bool
+        let result = TOSCalculator.sharedInstance.addPlayerToTeam(91, playerName: "",position: 1) as Bool
         XCTAssert(result, String(format:"%s",__FUNCTION__))
     }
     
     func testAddMultipositionPlayerToTheWrongPosition(){
         //Let's Add 92 position 2-4 to position 7
-        let result = TOSCalculator.sharedInstance.addPlayerToTeam(92, position: 7) as Bool
+        let result = TOSCalculator.sharedInstance.addPlayerToTeam(92, playerName: "",position: 7) as Bool
         XCTAssertFalse(result, String(format:"%s",__FUNCTION__))
     }
     
     func testAddMultipositionPlayerToTheRightPosition(){
         //Let's Add 92 position 2-4 to position 2
-        let result = TOSCalculator.sharedInstance.addPlayerToTeam(92, position: 4) as Bool
+        let result = TOSCalculator.sharedInstance.addPlayerToTeam(92, playerName: "",position: 4) as Bool
         XCTAssert(result, String(format:"%s",__FUNCTION__))
     }
     
@@ -88,6 +88,8 @@ class TOSCalculatorTests: XCTestCase {
         XCTAssert( (result == 5) , String(format:"%s",__FUNCTION__))*/
     }
     
+    
+    
     func testemptyTeam(){
         let resultDefense = TOSCalculator.sharedInstance.calculateDefense()
         XCTAssert( (resultDefense == -10) , String(format:"%s",__FUNCTION__))
@@ -96,16 +98,72 @@ class TOSCalculatorTests: XCTestCase {
         XCTAssert( (resultAttack == -12) , String(format:"%s",__FUNCTION__))
     }
     
+    func testFullTeam(){
+        TOSCalculator.sharedInstance.addPlayerToTeam(35, playerName: "CEVASCO",  position: 1)
+        TOSCalculator.sharedInstance.addPlayerToTeam(14, playerName: "LIPSCHITZZ",position: 2)
+        TOSCalculator.sharedInstance.addPlayerToTeam(45, playerName: "AKUMO",position: 3)
+        TOSCalculator.sharedInstance.addPlayerToTeam(16, playerName: "KSUCO",position: 4)
+        TOSCalculator.sharedInstance.addPlayerToTeam(20, playerName: "FUCH",position: 5)
+        TOSCalculator.sharedInstance.addPlayerToTeam(94, playerName: "",position: 6)
+        TOSCalculator.sharedInstance.addPlayerToTeam(11, playerName: "ALPINO",position: 7)
+        TOSCalculator.sharedInstance.addPlayerToTeam(23, playerName: "ROCINANTE",position: 8)
+        TOSCalculator.sharedInstance.addPlayerToTeam(21, playerName: "OLADOLA",position: 9)
+        TOSCalculator.sharedInstance.addPlayerToTeam(85, playerName: "TONE",position: 10)
+        TOSCalculator.sharedInstance.addPlayerToTeam(47, playerName: "CÁRDENAS",position: 11)
+        TOSCalculator.sharedInstance.addCoachToPosition("BUHONERO", position: 2)
+        TOSCalculator.sharedInstance.addCoachToPosition("EXIMENO", position: 3)
+
+        //def
+        var resPlayer = TOSCalculator.sharedInstance.calculatePlayer(1)
+        XCTAssert( (resPlayer == 6) , String(format:"%s",__FUNCTION__))
+        resPlayer = TOSCalculator.sharedInstance.calculatePlayer(2)
+        XCTAssert( (resPlayer == 14) , String(format:"%s",__FUNCTION__))
+        
+        resPlayer = TOSCalculator.sharedInstance.calculatePlayer(3)
+        XCTAssert( (resPlayer == 5) , String(format:"%s",__FUNCTION__))
+
+        resPlayer = TOSCalculator.sharedInstance.calculatePlayer(4)
+        XCTAssert( (resPlayer == 10) , String(format:"%s",__FUNCTION__))
+        resPlayer = TOSCalculator.sharedInstance.calculatePlayer(5)
+        XCTAssert( (resPlayer == 4) , String(format:"%s",__FUNCTION__))
+        
+        //att
+        resPlayer = TOSCalculator.sharedInstance.calculatePlayer(6)
+        XCTAssert( (resPlayer == 1) , String(format:"%s",__FUNCTION__))
+        
+        resPlayer = TOSCalculator.sharedInstance.calculatePlayer(7)
+        XCTAssert( (resPlayer == 21) , String(format:"%s",__FUNCTION__))
+        
+        resPlayer = TOSCalculator.sharedInstance.calculatePlayer(8)
+        XCTAssert( (resPlayer == 13) , String(format:"%s",__FUNCTION__))
+        resPlayer = TOSCalculator.sharedInstance.calculatePlayer(9)
+        XCTAssert( (resPlayer == 12) , String(format:"%s",__FUNCTION__))
+        
+        resPlayer = TOSCalculator.sharedInstance.calculatePlayer(10)
+        XCTAssert( (resPlayer == 6) , String(format:"%s",__FUNCTION__))
+        
+        resPlayer = TOSCalculator.sharedInstance.calculatePlayer(11)
+        XCTAssert( (resPlayer == 11) , String(format:"%s",__FUNCTION__))
+        
+        let resultDefense = TOSCalculator.sharedInstance.calculateDefense()
+        XCTAssert( (resultDefense == 39) , String(format:"%s",__FUNCTION__))
+        
+        let resultAttack = TOSCalculator.sharedInstance.calculateAttack()
+        XCTAssert( (resultAttack == 64) , String(format:"%s",__FUNCTION__))
+
+        
+    }
+    
     func testManualExample(){//this test is simulating the example present in the game manual
-        TOSCalculator.sharedInstance.addPlayerToTeam(3, position: 2)
-        TOSCalculator.sharedInstance.addPlayerToTeam(14, position: 3)
-        TOSCalculator.sharedInstance.addPlayerToTeam(97, position: 4)
-        TOSCalculator.sharedInstance.addPlayerToTeam(20, position: 5)
-        TOSCalculator.sharedInstance.addPlayerToTeam(41, position: 6)
-        TOSCalculator.sharedInstance.addPlayerToTeam(18, position: 8)
-        TOSCalculator.sharedInstance.addPlayerToTeam(28, position: 9)
-        TOSCalculator.sharedInstance.addPlayerToTeam(10, position: 10)
-        TOSCalculator.sharedInstance.addPlayerToTeam(9, position: 11)
+        TOSCalculator.sharedInstance.addPlayerToTeam(3, playerName: "", position: 2)
+        TOSCalculator.sharedInstance.addPlayerToTeam(14, playerName: "", position: 3)
+        TOSCalculator.sharedInstance.addPlayerToTeam(97, playerName: "", position: 4)
+        TOSCalculator.sharedInstance.addPlayerToTeam(20, playerName: "", position: 5)
+        TOSCalculator.sharedInstance.addPlayerToTeam(41, playerName: "", position: 6)
+        TOSCalculator.sharedInstance.addPlayerToTeam(18, playerName: "", position: 8)
+        TOSCalculator.sharedInstance.addPlayerToTeam(28, playerName: "", position: 9)
+        TOSCalculator.sharedInstance.addPlayerToTeam(10, playerName: "", position: 10)
+        TOSCalculator.sharedInstance.addPlayerToTeam(9, playerName: "", position: 11)
         TOSCalculator.sharedInstance.addCoachToPosition("PICAPICARA", position: 1)
         TOSCalculator.sharedInstance.addCoachToPosition("ANGEL MARTINEZ", position: 3)
 
