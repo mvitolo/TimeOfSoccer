@@ -203,6 +203,18 @@ class TOSCalculatorTests: XCTestCase {
         XCTAssert( (resultAttack == 39) , String(format:"%s",__FUNCTION__))
     }
     
+    func testGetAllPlayersForPosition(){
+        var players = TOSCalculator.sharedInstance.getAllPlayersForPosition(4)
+        XCTAssert( (players.count == 19) , String(format:"%s",__FUNCTION__))
+        
+        players = TOSCalculator.sharedInstance.getAllPlayersForPosition(5)
+        XCTAssert( (players.count == 10) , String(format:"%s",__FUNCTION__))
+
+        
+        players = TOSCalculator.sharedInstance.getAllPlayersForPosition(9)
+        XCTAssert( (players.count == 16) , String(format:"%s",__FUNCTION__))
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {

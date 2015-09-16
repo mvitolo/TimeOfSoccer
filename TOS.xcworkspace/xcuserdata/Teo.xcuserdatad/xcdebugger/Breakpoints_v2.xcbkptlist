@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TOS/TosCalculator.swift"
-            timestampString = "462355027.443884"
+            timestampString = "464009795.750598"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "addCoachToPosition(_:position:)"
             landmarkType = "5">
             <Locations>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TOS/TosCalculator.swift"
-            timestampString = "462439528.279807"
+            timestampString = "464009795.750598"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "430"
-            endingLineNumber = "430"
+            startingLineNumber = "444"
+            endingLineNumber = "444"
             landmarkName = "calculatePlayer(_:)"
             landmarkType = "5">
             <Locations>
@@ -113,38 +113,6 @@
             endingLineNumber = "152"
             landmarkName = "testFullTeam()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TOSTests.TOSCalculatorTests.testFullTeam (TOSTests.TOSCalculatorTests)() -&gt; ()"
-                  moduleName = "TOSTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Teo/myCode/GitHub/TimeOfSoccer/TOSTests/TOSCalculatorTests.swift"
-                  timestampString = "462439931.255867"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "152"
-                  endingLineNumber = "152"
-                  offsetFromSymbolStart = "8103">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TOSTests.TOSCalculatorTests.(testFullTeam (TOSTests.TOSCalculatorTests) -&gt; () -&gt; ()).(implicit closure #13)"
-                  moduleName = "TOSTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Teo/myCode/GitHub/TimeOfSoccer/TOSTests/TOSCalculatorTests.swift"
-                  timestampString = "462439931.256439"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "152"
-                  endingLineNumber = "152"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

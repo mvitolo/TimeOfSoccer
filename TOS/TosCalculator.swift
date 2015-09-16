@@ -55,6 +55,20 @@ public class TOSCalculator {
         return jsonDict
     }
     
+    func getAllPlayersForPosition(position:Int)-> NSArray{
+        let playersinrole = NSMutableArray()
+        for player in players{
+            let playerPositions = (player.objectForKey("Positions") as! NSArray)
+            
+            for playerPosition in playerPositions {
+                if ((playerPosition.objectForKey("Position") as! Int) == position){
+                    playersinrole.addObject(player)
+                }
+            }
+        }
+        return playersinrole
+    }
+    
     func addCoachToPosition(CoachName:String, position:Int) -> Bool{
         for coach in coaches {
             let coachname = (coach as! NSDictionary).objectForKey("Name") as! NSString
