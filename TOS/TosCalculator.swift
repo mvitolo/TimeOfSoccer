@@ -88,7 +88,7 @@ public class TOSCalculator {
         return false
     }
     
-    func addPlayerToTeam(shirtnumber: Int, playerName: String, position:Int) ->Bool {
+    func addPlayerToTeam(shirtnumber: NSNumber, playerName: String, position:Int) ->Bool {
         for player in players {
             if (player as! NSDictionary).objectForKey("ShirtNumber") as! Int == shirtnumber {
                 

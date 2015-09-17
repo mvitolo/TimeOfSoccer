@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB09E99A1BAB5F47006711EB /* PlayerPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09E9981BAB5F47006711EB /* PlayerPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AB09E99B1BAB5F47006711EB /* PlayerPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB09E9991BAB5F47006711EB /* PlayerPickerViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		AB4A13781B81FEBC00628481 /* coaches.json in Resources */ = {isa = PBXBuildFile; fileRef = AB4A13771B81FEBC00628481 /* coaches.json */; };
 		AB99FC101B6AC97D00EE1586 /* TosCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */; };
 		ABEF3D751B6BC8C7006DDE28 /* TOSCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF3D741B6BC8C7006DDE28 /* TOSCalculatorTests.swift */; };
@@ -161,6 +163,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB09E9981BAB5F47006711EB /* PlayerPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerPickerViewController.swift; sourceTree = "<group>"; };
+		AB09E9991BAB5F47006711EB /* PlayerPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerPickerViewController.xib; sourceTree = "<group>"; };
 		AB4A13771B81FEBC00628481 /* coaches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coaches.json; sourceTree = "<group>"; };
 		AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TosCalculator.swift; sourceTree = "<group>"; };
 		ABEF3D741B6BC8C7006DDE28 /* TOSCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOSCalculatorTests.swift; sourceTree = "<group>"; };
@@ -363,6 +367,8 @@
 				ABF28BEE1B68243E00B61F29 /* LaunchScreen.xib */,
 				ABF28BE31B68243E00B61F29 /* Supporting Files */,
 				AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */,
+				AB09E9981BAB5F47006711EB /* PlayerPickerViewController.swift */,
+				AB09E9991BAB5F47006711EB /* PlayerPickerViewController.xib */,
 			);
 			path = TOS;
 			sourceTree = "<group>";
@@ -783,6 +789,7 @@
 				ABF28CBF1B68249C00B61F29 /* jug_48.png in Resources */,
 				ABF28CA71B68249C00B61F29 /* jug_26.png in Resources */,
 				ABF28D051B68249C00B61F29 /* st_6.png in Resources */,
+				AB09E99B1BAB5F47006711EB /* PlayerPickerViewController.xib in Resources */,
 				ABF28CF31B68249C00B61F29 /* oje_5.png in Resources */,
 				ABF28CF01B68249C00B61F29 /* oje_10.png in Resources */,
 				ABF28CC81B68249C00B61F29 /* jug_56.png in Resources */,
@@ -832,6 +839,7 @@
 			files = (
 				ABF28BE81B68243E00B61F29 /* ViewController.swift in Sources */,
 				ABF28BE61B68243E00B61F29 /* AppDelegate.swift in Sources */,
+				AB09E99A1BAB5F47006711EB /* PlayerPickerViewController.swift in Sources */,
 				AB99FC101B6AC97D00EE1586 /* TosCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
