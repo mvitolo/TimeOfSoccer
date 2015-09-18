@@ -10,7 +10,7 @@ import UIKit
 
 class PlayerPickerViewController: UITableViewController {
     var items = NSMutableArray()
-
+    
     var position : Int!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +58,7 @@ class PlayerPickerViewController: UITableViewController {
 
         TOSCalculator.sharedInstance.addPlayerToTeam(player.objectForKey("ShirtNumber") as! NSNumber, playerName: player.objectForKey("Name") as! NSString as String, position: position)
         
+        self.dismissViewControllerAnimated(true, completion:nil)
     }
     /*
     // Override to support conditional editing of the table view.

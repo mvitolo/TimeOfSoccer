@@ -106,22 +106,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TOS/PlayerPickerViewController.swift"
-            timestampString = "464219476.756814"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TOS/PlayerPickerViewController.swift"
             timestampString = "464219479.888273"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

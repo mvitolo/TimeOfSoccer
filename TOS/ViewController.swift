@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
 
     var team : NSDictionary!
     
