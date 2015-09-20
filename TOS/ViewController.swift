@@ -30,6 +30,10 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
         playersButtons =  [p1Button, p2Button,p3Button,p4Button,p5Button,p6Button,p7Button,p8Button,p9Button,p10Button,p11Button]
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -39,8 +43,16 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
     func reassignTiles(){
         team = (TOSCalculator.sharedInstance.team) as NSDictionary
         for index in 1...11{
-            let image = (team[index] as! NSDictionary).objectForKey("image") as! NSString
-            (playersButtons[index] as! UIButton).setBackgroundImage(UIImage(named: image as String), forState: UIControlState.Normal)
+            let player = team.objectForKey(index) as! NSDictionary
+            
+            let image = player.objectForKey("image")
+            if (image != nil){
+                let buttonIndex = index - 1
+                (playersButtons[buttonIndex] as! UIButton).setBackgroundImage(UIImage(named: image as! String), forState: UIControlState.Normal)
+            }else{
+                let buttonIndex = index - 1
+                (playersButtons[buttonIndex] as! UIButton).setBackgroundImage(nil, forState: UIControlState.Normal)
+            }
         }
     }
 
@@ -83,8 +95,9 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
         playerInformationViewController.position = position
         playerInformationViewController.modalPresentationStyle = .Popover
         playerInformationViewController.preferredContentSize = CGSizeMake(300, 300)
+        playerInformationViewController.caller = self
         
-        let popoverPresentationViewController = playerInformationViewController.popoverPresentationController
+        let popoverPresentationViewController =  playerInformationViewController.popoverPresentationController
         popoverPresentationViewController?.permittedArrowDirections = .Any
         popoverPresentationViewController?.delegate = self
         popoverPresentationViewController?.sourceRect = CGRectMake(50, 50, 0, 0)

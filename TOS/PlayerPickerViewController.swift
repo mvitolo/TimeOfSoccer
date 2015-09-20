@@ -10,6 +10,7 @@ import UIKit
 
 class PlayerPickerViewController: UITableViewController {
     var items = NSMutableArray()
+    var caller : UIViewController?
     
     var position : Int!
     override func viewDidLoad() {
@@ -57,6 +58,8 @@ class PlayerPickerViewController: UITableViewController {
         let player = self.items[indexPath.row] as! NSDictionary
 
         TOSCalculator.sharedInstance.addPlayerToTeam(player.objectForKey("ShirtNumber") as! NSNumber, playerName: player.objectForKey("Name") as! NSString as String, position: position)
+        
+        (caller as! ViewController).reassignTiles()
         
         self.dismissViewControllerAnimated(true, completion:nil)
     }
