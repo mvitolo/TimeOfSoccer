@@ -10,59 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TOS/TosCalculator.swift"
-            timestampString = "464009795.750598"
+            timestampString = "464461883.021191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "addCoachToPosition(_:position:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TOS.TOSCalculator.addCoachToPosition (TOS.TOSCalculator)(Swift.String, position : Swift.Int) -&gt; Swift.Bool"
-                  moduleName = "TOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Teo/myCode/GitHub/TimeOfSoccer/TOS/TosCalculator.swift"
-                  timestampString = "462355200.332067"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "516">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TOSTests.TOSCalculator.addCoachToPosition (TOSTests.TOSCalculator)(Swift.String, position : Swift.Int) -&gt; Swift.Bool"
-                  moduleName = "TOSTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Teo/myCode/GitHub/TimeOfSoccer/TOS/TosCalculator.swift"
-                  timestampString = "462355200.808144"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "516">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TOS/TosCalculator.swift"
-            timestampString = "464428295.117496"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "460"
-            endingLineNumber = "460"
+            startingLineNumber = "477"
+            endingLineNumber = "477"
             landmarkName = "calculatePlayer(_:)"
             landmarkType = "5">
             <Locations>
@@ -106,12 +58,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TOS/TosCalculator.swift"
-            timestampString = "464428497.762818"
+            timestampString = "464461883.021191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "addPlayerToTeam(_:playerName:position:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TOS/ViewController.swift"
+            timestampString = "464462611.042137"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "reassignTiles()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

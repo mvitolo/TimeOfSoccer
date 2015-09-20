@@ -66,13 +66,30 @@ public class TOSCalculator {
                 }
             }
         }
-        return playersinrole
+        
+        let descriptor: NSSortDescriptor = NSSortDescriptor(key: "ShirtNumber", ascending: true)
+        let sortedResults: NSArray = playersinrole.sortedArrayUsingDescriptors([descriptor])
+
+        
+        return sortedResults
     }
     
     func addCoachToPosition(CoachName:String, position:Int) -> Bool{
         for coach in coaches {
             let coachname = (coach as! NSDictionary).objectForKey("Name") as! NSString
             if coachname.isEqualToString(CoachName) {
+                if (coach1.count != 0 && (coach1.objectForKey("Name") as! NSString).isEqualToString(CoachName)){
+                    coach1 = NSDictionary()
+                }
+                
+                if (coach2.count != 0 && (coach2.objectForKey("Name") as! NSString).isEqualToString(CoachName)){
+                    coach2 = NSDictionary()
+                }
+                
+                if (coach3.count != 0 && (coach3.objectForKey("Name") as! NSString).isEqualToString(CoachName)){
+                    coach3 = NSDictionary()
+                }
+                
                 if (position == 1){
                     coach1 = coach as! NSDictionary
                     return true
@@ -472,6 +489,9 @@ public class TOSCalculator {
     
     func calculateModule(module: NSString) ->Int{
         var result = 0
+        if (coach1.count == 0){
+            addCoachToPosition("-", position: 1)
+        }
         
         let attackModule = coach1.objectForKey(module) as! NSArray
         

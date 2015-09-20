@@ -8,16 +8,24 @@
 
 import UIKit
 
+enum TeamRole {
+    case Coach, Player
+}
+
 class PlayerPickerViewController: UITableViewController {
     var items = NSMutableArray()
     var caller : UIViewController?
-    
+    var role : TeamRole?
     var position : Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if ( role == TeamRole.Player ){
+            self.items.addObjectsFromArray(TOSCalculator.sharedInstance.getAllPlayersForPosition(self.position) as [AnyObject])
 
-        self.items.addObjectsFromArray(TOSCalculator.sharedInstance.getAllPlayersForPosition(self.position) as [AnyObject])
-
+        } else if ( role == TeamRole.Coach ) {
+            self.items.addObjectsFromArray(TOSCalculator.sharedInstance.coaches as [AnyObject])
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -47,21 +55,31 @@ class PlayerPickerViewController: UITableViewController {
         let cell = UITableViewCell()//tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
         let player = self.items[indexPath.row] as! NSDictionary
-        
-        cell.textLabel?.text = NSString(format: "%@ - %@", (player.objectForKey("ShirtNumber")?.stringValue)!, player.objectForKey("Name") as! NSString) as String
-        // Configure the cell...
-
+        if ( role == TeamRole.Player){
+            cell.textLabel?.text = NSString(format: "%@ - %@", (player.objectForKey("ShirtNumber")?.stringValue)!, player.objectForKey("Name") as! NSString) as String
+        }else if (role == TeamRole.Coach){
+            cell.textLabel?.text =  player.objectForKey("Name") as? String
+        }
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let player = self.items[indexPath.row] as! NSDictionary
 
-        TOSCalculator.sharedInstance.addPlayerToTeam(player.objectForKey("ShirtNumber") as! NSNumber, playerName: player.objectForKey("Name") as! NSString as String, position: position)
-        
-        (caller as! ViewController).reassignTiles()
-        
-        self.dismissViewControllerAnimated(true, completion:nil)
+        if ( role == TeamRole.Player ){
+            let player = self.items[indexPath.row] as! NSDictionary
+            
+            TOSCalculator.sharedInstance.addPlayerToTeam(player.objectForKey("ShirtNumber") as! NSNumber, playerName: player.objectForKey("Name") as! NSString as String, position: position)
+            (caller as! ViewController).reassignTiles()
+            
+            self.dismissViewControllerAnimated(true, completion:nil)
+        }else if ( role == TeamRole.Coach ){
+            let coach = self.items[indexPath.row] as! NSDictionary
+            
+            TOSCalculator.sharedInstance.addCoachToPosition(coach.objectForKey("Name") as! String, position: position)
+            (caller as! ViewController).reassignTiles()
+            
+            self.dismissViewControllerAnimated(true, completion:nil)
+        }
     }
     /*
     // Override to support conditional editing of the table view.
