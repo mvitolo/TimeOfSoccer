@@ -37,6 +37,7 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         playersButtons =  [p1Button, p2Button,p3Button,p4Button,p5Button,p6Button,p7Button,p8Button,p9Button,p10Button,p11Button]
+        reassignTiles()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
