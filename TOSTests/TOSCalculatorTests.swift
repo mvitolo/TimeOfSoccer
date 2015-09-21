@@ -59,37 +59,6 @@ class TOSCalculatorTests: XCTestCase {
         XCTAssert(result, String(format:"%s",__FUNCTION__))
     }
     
- /*   func testAddAttack(){
-        TOSCalculator.sharedInstance.addPlayerToTeam(94, position: 6)
-        TOSCalculator.sharedInstance.addPlayerToTeam(95, position: 7)
-        TOSCalculator.sharedInstance.addPlayerToTeam(96, position: 11)
-
-        let resultAttack = TOSCalculator.sharedInstance.calculateAttack()
-        XCTAssert( (resultAttack == -6) , String(format:"%s",__FUNCTION__))
-    }
-    
-    func testAddDefence(){
-        TOSCalculator.sharedInstance.addPlayerToTeam(91, position: 1)
-        TOSCalculator.sharedInstance.addPlayerToTeam(92, position: 2)
-        TOSCalculator.sharedInstance.addPlayerToTeam(93, position: 3)
-        
-        let resultDefense = TOSCalculator.sharedInstance.calculateDefense()
-        XCTAssert( (resultDefense == -4) , String(format:"%s",__FUNCTION__))
-    }*/
-    
-    func testHorizontalConnection(){
-        
-    }
-    
-    func testVerticalConnection(){
-   /*     TOSCalculator.sharedInstance.addPlayerToTeam(94, position: 2)
-        TOSCalculator.sharedInstance.addPlayerToTeam(93, position: 6)
-        let result = TOSCalculator.sharedInstance.calculatePlayer(2)
-        XCTAssert( (result == 5) , String(format:"%s",__FUNCTION__))*/
-    }
-    
-    
-    
     func testemptyTeam(){
         let resultDefense = TOSCalculator.sharedInstance.calculateDefense()
         XCTAssert( (resultDefense == -10) , String(format:"%s",__FUNCTION__))
@@ -201,6 +170,10 @@ class TOSCalculatorTests: XCTestCase {
         
         let resultAttack = TOSCalculator.sharedInstance.calculateAttack()
         XCTAssert( (resultAttack == 39) , String(format:"%s",__FUNCTION__))
+        
+        
+        let counterValue = TOSCalculator.sharedInstance.calculateCounter()
+        XCTAssert( (counterValue == -15) , String(format:"%s",__FUNCTION__))
     }
     
     func testGetAllPlayersForPosition(){

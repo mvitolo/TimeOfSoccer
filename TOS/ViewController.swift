@@ -25,8 +25,8 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
     @IBOutlet weak var p11Button: UIButton!
     
     @IBOutlet weak var counterLabel: UILabel!
-    @IBOutlet weak var defenceLabel: UILabel!
     @IBOutlet weak var attackLabel: UILabel!
+    @IBOutlet weak var defenseLabel: UILabel!
     
     @IBOutlet weak var coach1Button: UIButton!
     @IBOutlet weak var coach2Button: UIButton!
@@ -82,27 +82,28 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
             if (image != nil){
                 coach2Button.setBackgroundImage(UIImage(named: image as! String), forState: UIControlState.Normal)
             }else{
-                coach2Button.setBackgroundImage(UIImage(named: "ent_1.png"), forState: UIControlState.Normal)
+                coach2Button.setBackgroundImage(UIImage(named: "ent_0.png"), forState: UIControlState.Normal)
             }
         }else {
-            coach2Button.setBackgroundImage(UIImage(named: "ent_1.png"), forState: UIControlState.Normal)
+            coach2Button.setBackgroundImage(UIImage(named: "ent_0.png"), forState: UIControlState.Normal)
         }
         
         if (TOSCalculator.sharedInstance.coach3.count > 0){
-            let coach = TOSCalculator.sharedInstance.coach1
+            let coach = TOSCalculator.sharedInstance.coach3
             let image = coach.objectForKey("image")
             if (image != nil){
                 coach3Button.setBackgroundImage(UIImage(named: image as! String), forState: UIControlState.Normal)
             }else{
-                coach3Button.setBackgroundImage(UIImage(named: "ent_1.png"), forState: UIControlState.Normal)
+                coach3Button.setBackgroundImage(UIImage(named: "ent_0.png"), forState: UIControlState.Normal)
             }
         }else {
-            coach3Button.setBackgroundImage(UIImage(named: "ent_1.png"), forState: UIControlState.Normal)
+            coach3Button.setBackgroundImage(UIImage(named: "ent_0.png"), forState: UIControlState.Normal)
         }
         
         
-        defenceLabel.text = NSString(format: "%d", TOSCalculator.sharedInstance.calculateDefense()) as String
-        attackLabel.text = NSString(format: "%d", TOSCalculator.sharedInstance.calculateAttack()) as String
+        defenseLabel.text = String(format: "%d", TOSCalculator.sharedInstance.calculateDefense())
+        attackLabel.text = String(format: "%d", TOSCalculator.sharedInstance.calculateAttack())
+        counterLabel.text = String(format: "%d", TOSCalculator.sharedInstance.calculateCounter())
         
     }
 

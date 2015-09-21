@@ -10,6 +10,7 @@
 		AB09E99A1BAB5F47006711EB /* PlayerPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09E9981BAB5F47006711EB /* PlayerPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AB09E99B1BAB5F47006711EB /* PlayerPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB09E9991BAB5F47006711EB /* PlayerPickerViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		AB4A13781B81FEBC00628481 /* coaches.json in Resources */ = {isa = PBXBuildFile; fileRef = AB4A13771B81FEBC00628481 /* coaches.json */; };
+		AB514E811BAFF3FD00864F08 /* ent_0.png in Resources */ = {isa = PBXBuildFile; fileRef = AB514E801BAFF3FD00864F08 /* ent_0.png */; settings = {ASSET_TAGS = (); }; };
 		AB99FC101B6AC97D00EE1586 /* TosCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */; };
 		ABEF3D751B6BC8C7006DDE28 /* TOSCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF3D741B6BC8C7006DDE28 /* TOSCalculatorTests.swift */; };
 		ABEF3D761B6BC947006DDE28 /* TosCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */; };
@@ -166,6 +167,7 @@
 		AB09E9981BAB5F47006711EB /* PlayerPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerPickerViewController.swift; sourceTree = "<group>"; };
 		AB09E9991BAB5F47006711EB /* PlayerPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerPickerViewController.xib; sourceTree = "<group>"; };
 		AB4A13771B81FEBC00628481 /* coaches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coaches.json; sourceTree = "<group>"; };
+		AB514E801BAFF3FD00864F08 /* ent_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ent_0.png; sourceTree = "<group>"; };
 		AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TosCalculator.swift; sourceTree = "<group>"; };
 		ABEF3D741B6BC8C7006DDE28 /* TOSCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOSCalculatorTests.swift; sourceTree = "<group>"; };
 		ABEF3D781B6BD561006DDE28 /* players.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
@@ -443,6 +445,7 @@
 		ABF28C111B68249C00B61F29 /* ent */ = {
 			isa = PBXGroup;
 			children = (
+				AB514E801BAFF3FD00864F08 /* ent_0.png */,
 				ABF28C121B68249C00B61F29 /* ent_1.png */,
 				ABF28C131B68249C00B61F29 /* ent_10.png */,
 				ABF28C141B68249C00B61F29 /* ent_11.png */,
@@ -653,6 +656,7 @@
 				TargetAttributes = {
 					ABF28BDF1B68243E00B61F29 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = N44BFX62BJ;
 					};
 					ABF28BF41B68243E00B61F29 = {
 						CreatedOnToolsVersion = 6.4;
@@ -771,6 +775,7 @@
 				ABF28CE31B68249C00B61F29 /* jug_81.png in Resources */,
 				ABF28CD21B68249C00B61F29 /* jug_65.png in Resources */,
 				ABF28CE91B68249C00B61F29 /* jug_87.png in Resources */,
+				AB514E811BAFF3FD00864F08 /* ent_0.png in Resources */,
 				ABF28CFB1B68249C00B61F29 /* publi_4.png in Resources */,
 				ABF28CB61B68249C00B61F29 /* jug_4.png in Resources */,
 				ABF28C921B68249C00B61F29 /* com_11.png in Resources */,
@@ -947,7 +952,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Funambol, Inc (84H5N96FB8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Funambol, Inc (84H5N96FB8)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -962,6 +968,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "7a3f6192-fcb1-4fed-92e1-d90a2ca828e8";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -972,6 +979,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.funambol.$(PRODUCT_NAME:rfc1034identifier)";
@@ -983,6 +991,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Funambol, Inc (84H5N96FB8)";
 				INFOPLIST_FILE = TOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.funambol.$(PRODUCT_NAME:rfc1034identifier)";

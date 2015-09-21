@@ -140,7 +140,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view hidden="YES" alpha="0.85000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9v1-IP-3TH" userLabel="CounterView">
+                            <view alpha="0.85000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9v1-IP-3TH" userLabel="CounterView">
                                 <rect key="frame" x="493" y="661" width="99" height="92"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fg6-7p-E7h">
@@ -161,16 +161,16 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view alpha="0.85000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhz-fZ-evy" userLabel="DefenceView">
+                            <view alpha="0.85000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhz-fZ-evy" userLabel="DefenseView">
                                 <rect key="frame" x="687" y="661" width="99" height="92"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLI-rx-e5Q">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLI-rx-e5Q" userLabel="Defense Label">
                                         <rect key="frame" x="8" y="35" width="83" height="49"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Defence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcU-YD-xeX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Defense" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcU-YD-xeX">
                                         <rect key="frame" x="0.0" y="0.0" width="99" height="28"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -193,7 +193,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ai1-xc-etC" userLabel="Coach2">
                                 <rect key="frame" x="73" y="345" width="99" height="99"/>
-                                <state key="normal" backgroundImage="ent_1.png">
+                                <state key="normal" backgroundImage="ent_0.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -202,7 +202,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXv-YS-xcK" userLabel="Coach3">
                                 <rect key="frame" x="73" y="481" width="99" height="99"/>
-                                <state key="normal" backgroundImage="ent_1.png">
+                                <state key="normal" backgroundImage="ent_0.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -220,7 +220,7 @@
                         <outlet property="coach2Button" destination="Ai1-xc-etC" id="vnr-fP-TLv"/>
                         <outlet property="coach3Button" destination="JXv-YS-xcK" id="Ec8-sH-1Y5"/>
                         <outlet property="counterLabel" destination="Fg6-7p-E7h" id="waL-N5-jow"/>
-                        <outlet property="defenceLabel" destination="eLI-rx-e5Q" id="3MN-Ko-857"/>
+                        <outlet property="defenseLabel" destination="eLI-rx-e5Q" id="Dof-iM-3dP"/>
                         <outlet property="p10Button" destination="fjV-4T-MHq" id="Znl-W4-d21"/>
                         <outlet property="p11Button" destination="Nw4-Gi-mXH" id="ll2-t9-DRe"/>
                         <outlet property="p1Button" destination="fOW-Cg-E0l" id="M1p-gw-66y"/>
@@ -240,6 +240,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ent_0.png" width="99" height="99"/>
         <image name="ent_1.png" width="99" height="99"/>
         <image name="tablero_lagarto.png" width="802" height="578"/>
     </resources>

@@ -487,6 +487,27 @@ public class TOSCalculator {
         return result
     }
     
+    func calculateCounter()->Int{
+        var counter = 0
+        for index in 1...11{
+            let player = team[index] as! NSDictionary
+            if (player.count > 0 ){
+                counter += player.objectForKey("HumanCost") as! Int
+            }
+        }
+        if (coach1.count > 0){
+            counter += coach1.objectForKey("HumanCost") as! Int
+        }
+        if (coach2.count > 0){
+            counter += coach2.objectForKey("HumanCost") as! Int
+        }
+        if (coach3.count > 0){
+            counter += coach3.objectForKey("HumanCost") as! Int
+        }
+        
+        return counter
+    }
+    
     func calculateModule(module: NSString) ->Int{
         var result = 0
         if (coach1.count == 0){
