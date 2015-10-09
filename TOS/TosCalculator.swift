@@ -105,6 +105,20 @@ public class TOSCalculator {
         return false
     }
     
+    func removePlayerFromPosition(positionIndex: Int) {
+        team[positionIndex] = NSDictionary()
+    }
+    
+    func removeCoachFromPosition(positionIndex: Int) {
+        if (positionIndex == 1){
+            coach1 = NSDictionary()
+        }else if (positionIndex == 2){
+            coach2 = NSDictionary()
+        }else if (positionIndex == 3){
+            coach3 = NSDictionary()
+        }
+    }
+    
     func addPlayerToTeam(shirtnumber: NSNumber, playerName: String, position:Int) ->Bool {
         for player in players {
             let cplayerName = (player as! NSDictionary).objectForKey("Name") as! NSString

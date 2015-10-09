@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import iAd
 
-class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
+class ViewController: UIViewController,UIPopoverPresentationControllerDelegate,ADBannerViewDelegate, ADInterstitialAdDelegate {
 
     var team : NSDictionary!
     
@@ -32,8 +33,12 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
     @IBOutlet weak var coach2Button: UIButton!
     @IBOutlet weak var coach3Button: UIButton!
     
+    @IBOutlet weak var adBanner: ADBannerView!
     var playersButtons : NSMutableArray!
     var coachesButtons : NSMutableArray!
+    
+    //var fullviewad : ADInterstitialAd!
+    var counter = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         playersButtons =  [p1Button, p2Button,p3Button,p4Button,p5Button,p6Button,p7Button,p8Button,p9Button,p10Button,p11Button]
@@ -43,6 +48,8 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        //fullviewad = ADInterstitialAd()
+        //fullviewad.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,6 +58,7 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
     }
     
     func reassignTiles(){
+        
         team = (TOSCalculator.sharedInstance.team) as NSDictionary
         for index in 1...11{
             let player = team.objectForKey(index) as! NSDictionary
@@ -104,6 +112,13 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
         defenseLabel.text = String(format: "%d", TOSCalculator.sharedInstance.calculateDefense())
         attackLabel.text = String(format: "%d", TOSCalculator.sharedInstance.calculateAttack())
         counterLabel.text = String(format: "%d", TOSCalculator.sharedInstance.calculateCounter())
+        
+        /*if counter == 10 {
+            counter = 0
+            fullviewad.presentInView(self.view)
+        }else{
+            counter++
+        }*/
         
     }
 
@@ -174,6 +189,24 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
         //popoverPresentationController?.barButtonItem = sender
         popoverPresentationViewController?.sourceView = sender as? UIView
         presentViewController(playerInformationViewController, animated: true, completion: nil)
+    }
+    func bannerViewDidLoadAd(banner: ADBannerView!) {
+        adBanner.hidden = false
+    }
+    
+    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+        adBanner.hidden = true
+    }
+    
+    func interstitialAdActionShouldBegin(interstitialAd: ADInterstitialAd!, willLeaveApplication willLeave: Bool) -> Bool {
+        return true;
+    }
+    
+    func interstitialAdDidUnload(interstitialAd: ADInterstitialAd!) {
+    
+    }
+    func interstitialAd(interstitialAd: ADInterstitialAd!, didFailWithError error: NSError!){
+        
     }
 
 }
