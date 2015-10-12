@@ -3,7 +3,7 @@
 //  TOS
 //
 //  Created by Matteo on 17/09/15.
-//  Copyright © 2015 Funambol. All rights reserved.
+//  Copyright © 2015 Matteo Vitolo. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ enum TeamRole {
 
 class PlayerPickerViewController: UITableViewController {
     var items = NSMutableArray()
-    var caller : UIViewController?
+    var caller : TilesDelegate?
     var role : TeamRole?
     var position : Int!
     
@@ -22,9 +22,12 @@ class PlayerPickerViewController: UITableViewController {
         super.viewDidLoad()
         if ( role == TeamRole.Player ){
             self.items.addObjectsFromArray(TOSCalculator.sharedInstance.getAllPlayersForPosition(self.position) as [AnyObject])
+            self.title = String(format: "Player in position %d", position)
 
         } else if ( role == TeamRole.Coach ) {
             self.items.addObjectsFromArray(TOSCalculator.sharedInstance.coaches as [AnyObject])
+            
+            self.title = String(format: "Coach in position %d", position)
         }
     }
 
@@ -36,12 +39,10 @@ class PlayerPickerViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return (self.items.count + 1)
     }
 
@@ -74,9 +75,6 @@ class PlayerPickerViewController: UITableViewController {
             
                 TOSCalculator.sharedInstance.addPlayerToTeam(player.objectForKey("ShirtNumber") as! NSNumber, playerName: player.objectForKey("Name") as! NSString as String, position: position)
             }
-            (caller as! ViewController).reassignTiles()
-            
-            self.dismissViewControllerAnimated(true, completion:nil)
         }else if ( role == TeamRole.Coach ){
             if (indexPath.row == 0){
                 TOSCalculator.sharedInstance.removeCoachFromPosition(position)
@@ -85,9 +83,13 @@ class PlayerPickerViewController: UITableViewController {
             
                 TOSCalculator.sharedInstance.addCoachToPosition(coach.objectForKey("Name") as! String, position: position)
             }
-            (caller as! ViewController).reassignTiles()
-            
+        }
+        caller!.reassignTiles()
+
+        if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
             self.dismissViewControllerAnimated(true, completion:nil)
+        } else {
+            self.navigationController?.popViewControllerAnimated(true)
         }
     }
 }

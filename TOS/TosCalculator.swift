@@ -3,7 +3,7 @@
 //  TOS
 //
 //  Created by Matteo Vitolo on 30/07/15.
-//  Copyright (c) 2015 Funambol. All rights reserved.
+//  Copyright (c) 2015 Matteo Vitolo. All rights reserved.
 //
 
 import Foundation
@@ -140,7 +140,7 @@ public class TOSCalculator {
                                 }
                                 let teamName = (teamPlayer as! NSDictionary).objectForKey("Name") as! NSString
                                 let teamShirtNumber = (teamPlayer as! NSDictionary).objectForKey("ShirtNumber") as! Int
-                                if (teamName.isEqualToString(cplayerName as String) || teamShirtNumber == cplayerName ) {
+                                if (teamName.isEqualToString(cplayerName as String) && teamShirtNumber == cplayerShirtNumber ) {
                                     team[index] = NSDictionary()
                                 }
                             }
@@ -208,42 +208,42 @@ public class TOSCalculator {
         case 1:
             return "OrangeDown"
         case 2:
-            if ( isPlayerAttacModule(positionIndex)){
+            if ( isPlayerAttackModule(positionIndex)){
                 return "BlueLeft"
             }
             return "OrangeLeft"
         case 3:
-            if ( isPlayerAttacModule(positionIndex)){
+            if ( isPlayerAttackModule(positionIndex)){
                 return "YellowTop"
             }
             return "OrangeDown"
         case 4:
-            if ( isPlayerAttacModule(positionIndex)){
+            if ( isPlayerAttackModule(positionIndex)){
                 return "YellowTop"
             }
             return "OrangeDown"
         case 5:
-            if ( isPlayerAttacModule(positionIndex)){
+            if ( isPlayerAttackModule(positionIndex)){
                 return "BlueRight"
             }
             return "OrangeRight"
         case 6:
-            if ( isPlayerAttacModule(positionIndex)){
+            if ( isPlayerAttackModule(positionIndex)){
                 return "BlueLeft"
             }
             return "OrangeLeft"
         case 7:
-            if ( isPlayerAttacModule(positionIndex)){
+            if ( isPlayerAttackModule(positionIndex)){
                 return "YellowTop"
             }
             return "OrangeDown"
         case 8:
-            if ( isPlayerAttacModule(positionIndex)){
+            if ( isPlayerAttackModule(positionIndex)){
                 return "YellowTop"
             }
             return "OrangeDown"
         case 9:
-            if ( isPlayerAttacModule(positionIndex)){
+            if ( isPlayerAttackModule(positionIndex)){
                 return "BlueRight"
             }
             return "OrangeRight"
@@ -546,7 +546,18 @@ public class TOSCalculator {
         return calculateModule("DefenseModule")
     }
     
-    func isPlayerAttacModule(playerPosition:Int) ->Bool {
+    func getCoachFromPosition(position: Int) -> NSDictionary{
+        if position == 1 {
+            return coach1
+        } else if position == 2 {
+            return coach2
+        } else if position == 3 {
+            return coach3
+        }
+        return NSDictionary()
+    }
+    
+    func isPlayerAttackModule(playerPosition:Int) ->Bool {
      
         let attackModule = coach1.objectForKey("AttackModule") as! NSArray
         

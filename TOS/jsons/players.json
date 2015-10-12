@@ -31,7 +31,7 @@
                                  "Position": 2
                                  },
                                  {
-                                 "Position": 4
+                                 "Position": 5
                                  }
                                  ],
                    "HumanCost": -1,
@@ -54,10 +54,10 @@
                    "Name": "LAGARTOS CF",
                    "Positions": [
                                  {
-                                 "Position": 2
+                                 "Position": 3
                                  },
                                  {
-                                 "Position": 3
+                                 "Position": 4
                                  }
                                  ],
                    "HumanCost": -1,

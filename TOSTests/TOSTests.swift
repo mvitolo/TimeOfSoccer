@@ -3,7 +3,7 @@
 //  TOSTests
 //
 //  Created by Matteo Vitolo on 28/07/15.
-//  Copyright (c) 2015 Funambol. All rights reserved.
+//  Copyright (c) 2015 Matteo Vitolo. All rights reserved.
 //
 
 import UIKit

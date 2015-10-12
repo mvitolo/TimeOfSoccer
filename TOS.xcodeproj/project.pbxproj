@@ -11,7 +11,10 @@
 		AB09E99B1BAB5F47006711EB /* PlayerPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB09E9991BAB5F47006711EB /* PlayerPickerViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		AB4A13781B81FEBC00628481 /* coaches.json in Resources */ = {isa = PBXBuildFile; fileRef = AB4A13771B81FEBC00628481 /* coaches.json */; };
 		AB514E811BAFF3FD00864F08 /* ent_0.png in Resources */ = {isa = PBXBuildFile; fileRef = AB514E801BAFF3FD00864F08 /* ent_0.png */; settings = {ASSET_TAGS = (); }; };
+		AB7830C91BCA5A91004B62AE /* TilesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7830C81BCA5A91004B62AE /* TilesDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		AB99FC101B6AC97D00EE1586 /* TosCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */; };
+		ABDA0F8E1BC85F7500F1110E /* Main_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABDA0F8C1BC85F7500F1110E /* Main_iphone.storyboard */; settings = {ASSET_TAGS = (); }; };
+		ABDA0F901BC8600B00F1110E /* ViewController_iphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDA0F8F1BC8600B00F1110E /* ViewController_iphone.swift */; settings = {ASSET_TAGS = (); }; };
 		ABEF3D751B6BC8C7006DDE28 /* TOSCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF3D741B6BC8C7006DDE28 /* TOSCalculatorTests.swift */; };
 		ABEF3D761B6BC947006DDE28 /* TosCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */; };
 		ABEF3D791B6BD561006DDE28 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = ABEF3D781B6BD561006DDE28 /* players.json */; };
@@ -168,7 +171,10 @@
 		AB09E9991BAB5F47006711EB /* PlayerPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerPickerViewController.xib; sourceTree = "<group>"; };
 		AB4A13771B81FEBC00628481 /* coaches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coaches.json; sourceTree = "<group>"; };
 		AB514E801BAFF3FD00864F08 /* ent_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ent_0.png; sourceTree = "<group>"; };
+		AB7830C81BCA5A91004B62AE /* TilesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TilesDelegate.swift; sourceTree = "<group>"; };
 		AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TosCalculator.swift; sourceTree = "<group>"; };
+		ABDA0F8D1BC85F7500F1110E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iphone.storyboard; sourceTree = "<group>"; };
+		ABDA0F8F1BC8600B00F1110E /* ViewController_iphone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_iphone.swift; sourceTree = "<group>"; };
 		ABEF3D741B6BC8C7006DDE28 /* TOSCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOSCalculatorTests.swift; sourceTree = "<group>"; };
 		ABEF3D781B6BD561006DDE28 /* players.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
 		ABF28BE01B68243E00B61F29 /* TOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -362,15 +368,18 @@
 		ABF28BE21B68243E00B61F29 /* TOS */ = {
 			isa = PBXGroup;
 			children = (
+				AB7830C81BCA5A91004B62AE /* TilesDelegate.swift */,
 				ABF28BE51B68243E00B61F29 /* AppDelegate.swift */,
 				ABF28BE71B68243E00B61F29 /* ViewController.swift */,
 				ABF28BE91B68243E00B61F29 /* Main.storyboard */,
+				ABDA0F8C1BC85F7500F1110E /* Main_iphone.storyboard */,
 				ABF28BEC1B68243E00B61F29 /* Images.xcassets */,
 				ABF28BEE1B68243E00B61F29 /* LaunchScreen.xib */,
 				ABF28BE31B68243E00B61F29 /* Supporting Files */,
 				AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */,
 				AB09E9981BAB5F47006711EB /* PlayerPickerViewController.swift */,
 				AB09E9991BAB5F47006711EB /* PlayerPickerViewController.xib */,
+				ABDA0F8F1BC8600B00F1110E /* ViewController_iphone.swift */,
 			);
 			path = TOS;
 			sourceTree = "<group>";
@@ -792,6 +801,7 @@
 				ABF28CE51B68249C00B61F29 /* jug_83.png in Resources */,
 				ABF28C971B68249C00B61F29 /* com_8.png in Resources */,
 				ABF28CBF1B68249C00B61F29 /* jug_48.png in Resources */,
+				ABDA0F8E1BC85F7500F1110E /* Main_iphone.storyboard in Resources */,
 				ABF28CA71B68249C00B61F29 /* jug_26.png in Resources */,
 				ABF28D051B68249C00B61F29 /* st_6.png in Resources */,
 				AB09E99B1BAB5F47006711EB /* PlayerPickerViewController.xib in Resources */,
@@ -844,8 +854,10 @@
 			files = (
 				ABF28BE81B68243E00B61F29 /* ViewController.swift in Sources */,
 				ABF28BE61B68243E00B61F29 /* AppDelegate.swift in Sources */,
+				AB7830C91BCA5A91004B62AE /* TilesDelegate.swift in Sources */,
 				AB09E99A1BAB5F47006711EB /* PlayerPickerViewController.swift in Sources */,
 				AB99FC101B6AC97D00EE1586 /* TosCalculator.swift in Sources */,
+				ABDA0F901BC8600B00F1110E /* ViewController_iphone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -870,6 +882,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		ABDA0F8C1BC85F7500F1110E /* Main_iphone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABDA0F8D1BC85F7500F1110E /* Base */,
+			);
+			name = Main_iphone.storyboard;
+			sourceTree = "<group>";
+		};
 		ABF28BE91B68243E00B61F29 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -984,6 +1004,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.funambol.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -996,6 +1017,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.funambol.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

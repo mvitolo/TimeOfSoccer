@@ -3,7 +3,7 @@
 //  TOS
 //
 //  Created by Matteo Vitolo on 28/07/15.
-//  Copyright (c) 2015 Funambol. All rights reserved.
+//  Copyright (c) 2015 Matteo Vitolo. All rights reserved.
 //
 
 import UIKit
@@ -13,9 +13,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    
+    func getStoryBoard() -> UIStoryboard{
+        let storyBoard : UIStoryboard!
+        if (UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad) {
+            storyBoard = UIStoryboard(name:"Main", bundle:nil)
+        }else{
+            storyBoard = UIStoryboard(name:"Main_iphone", bundle:nil)
+        }
+        return storyBoard
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+       /* let sb = getStoryBoard()
+        
+        let vc = sb.instantiateInitialViewController()
+        
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()*/
+        
         return true
     }
 
