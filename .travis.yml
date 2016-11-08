@@ -1,7 +1,5 @@
 nguage: objective-c
 before_install:
-    - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
-    - gem install slather --no-rdoc --no-ri --no-document --quiet
     - pod install
 script:
   - xctool test -workspace TOS.xcworkspace -scheme TOSTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
