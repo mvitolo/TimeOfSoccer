@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB09E99A1BAB5F47006711EB /* PlayerPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09E9981BAB5F47006711EB /* PlayerPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		AB09E99B1BAB5F47006711EB /* PlayerPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB09E9991BAB5F47006711EB /* PlayerPickerViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		AB09E99A1BAB5F47006711EB /* PlayerPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09E9981BAB5F47006711EB /* PlayerPickerViewController.swift */; };
+		AB09E99B1BAB5F47006711EB /* PlayerPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB09E9991BAB5F47006711EB /* PlayerPickerViewController.xib */; };
 		AB4A13781B81FEBC00628481 /* coaches.json in Resources */ = {isa = PBXBuildFile; fileRef = AB4A13771B81FEBC00628481 /* coaches.json */; };
-		AB514E811BAFF3FD00864F08 /* ent_0.png in Resources */ = {isa = PBXBuildFile; fileRef = AB514E801BAFF3FD00864F08 /* ent_0.png */; settings = {ASSET_TAGS = (); }; };
-		AB7830C91BCA5A91004B62AE /* TilesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7830C81BCA5A91004B62AE /* TilesDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		AB514E811BAFF3FD00864F08 /* ent_0.png in Resources */ = {isa = PBXBuildFile; fileRef = AB514E801BAFF3FD00864F08 /* ent_0.png */; };
+		AB7830C91BCA5A91004B62AE /* TilesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7830C81BCA5A91004B62AE /* TilesDelegate.swift */; };
 		AB99FC101B6AC97D00EE1586 /* TosCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */; };
-		ABDA0F8E1BC85F7500F1110E /* Main_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABDA0F8C1BC85F7500F1110E /* Main_iphone.storyboard */; settings = {ASSET_TAGS = (); }; };
-		ABDA0F901BC8600B00F1110E /* ViewController_iphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDA0F8F1BC8600B00F1110E /* ViewController_iphone.swift */; settings = {ASSET_TAGS = (); }; };
+		ABDA0F8E1BC85F7500F1110E /* Main_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABDA0F8C1BC85F7500F1110E /* Main_iphone.storyboard */; };
+		ABDA0F901BC8600B00F1110E /* ViewController_iphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDA0F8F1BC8600B00F1110E /* ViewController_iphone.swift */; };
 		ABEF3D751B6BC8C7006DDE28 /* TOSCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF3D741B6BC8C7006DDE28 /* TOSCalculatorTests.swift */; };
 		ABEF3D761B6BC947006DDE28 /* TosCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99FC0F1B6AC97D00EE1586 /* TosCalculator.swift */; };
 		ABEF3D791B6BD561006DDE28 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = ABEF3D781B6BD561006DDE28 /* players.json */; };
@@ -660,15 +660,17 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Funambol;
 				TargetAttributes = {
 					ABF28BDF1B68243E00B61F29 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = N44BFX62BJ;
+						LastSwiftMigration = 0810;
 					};
 					ABF28BF41B68243E00B61F29 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0810;
 						TestTargetID = ABF28BDF1B68243E00B61F29;
 					};
 				};
@@ -922,8 +924,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -968,8 +972,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Funambol, Inc.";
@@ -990,6 +996,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "7a3f6192-fcb1-4fed-92e1-d90a2ca828e8";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1004,6 +1011,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.funambol.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1017,6 +1025,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.funambol.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1037,6 +1046,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.funambol.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TOS.app/TOS";
 			};
 			name = Debug;
@@ -1053,6 +1063,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.funambol.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TOS.app/TOS";
 			};
 			name = Release;

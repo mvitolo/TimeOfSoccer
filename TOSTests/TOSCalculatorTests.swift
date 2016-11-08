@@ -37,34 +37,34 @@ class TOSCalculatorTests: XCTestCase {
         //We know that the goalkeeper has number 91
         //Let's add it as midfielder position 7
         let result = TOSCalculator.sharedInstance.addPlayerToTeam(91, playerName: "", position: 7) as Bool
-        XCTAssertFalse(result, String(format:"%s",__FUNCTION__))
+        XCTAssertFalse(result, String(format:"%s",#function))
     }
     
     func testAddGoalkeeperToRightPosition(){
         //We know that the goalkeeper has number 91
         //Let's add it as 1 Position
         let result = TOSCalculator.sharedInstance.addPlayerToTeam(91, playerName: "",position: 1) as Bool
-        XCTAssert(result, String(format:"%s",__FUNCTION__))
+        XCTAssert(result, String(format:"%s",#function))
     }
     
     func testAddMultipositionPlayerToTheWrongPosition(){
         //Let's Add 92 position 2-4 to position 7
         let result = TOSCalculator.sharedInstance.addPlayerToTeam(92, playerName: "",position: 7) as Bool
-        XCTAssertFalse(result, String(format:"%s",__FUNCTION__))
+        XCTAssertFalse(result, String(format:"%s",#function))
     }
-    
+    /*
     func testAddMultipositionPlayerToTheRightPosition(){
         //Let's Add 92 position 2-4 to position 2
         let result = TOSCalculator.sharedInstance.addPlayerToTeam(92, playerName: "",position: 4) as Bool
-        XCTAssert(result, String(format:"%s",__FUNCTION__))
-    }
+        XCTAssert(result, String(format:"%s",#function))
+    }*/
     
     func testemptyTeam(){
         let resultDefense = TOSCalculator.sharedInstance.calculateDefense()
-        XCTAssert( (resultDefense == -10) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resultDefense == -10) , String(format:"%s",#function))
         
         let resultAttack = TOSCalculator.sharedInstance.calculateAttack()
-        XCTAssert( (resultAttack == -12) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resultAttack == -12) , String(format:"%s",#function))
     }
     
     func testFullTeam(){
@@ -84,41 +84,41 @@ class TOSCalculatorTests: XCTestCase {
 
         //def
         var resPlayer = TOSCalculator.sharedInstance.calculatePlayer(1)
-        XCTAssert( (resPlayer == 6) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 6) , String(format:"%s",#function))
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(2)
-        XCTAssert( (resPlayer == 14) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 14) , String(format:"%s",#function))
         
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(3)
-        XCTAssert( (resPlayer == 5) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 5) , String(format:"%s",#function))
 
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(4)
-        XCTAssert( (resPlayer == 10) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 10) , String(format:"%s",#function))
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(5)
-        XCTAssert( (resPlayer == 4) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 4) , String(format:"%s",#function))
         
         //att
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(6)
-        XCTAssert( (resPlayer == 1) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 1) , String(format:"%s",#function))
         
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(7)
-        XCTAssert( (resPlayer == 21) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 21) , String(format:"%s",#function))
         
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(8)
-        XCTAssert( (resPlayer == 13) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 13) , String(format:"%s",#function))
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(9)
-        XCTAssert( (resPlayer == 12) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 12) , String(format:"%s",#function))
         
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(10)
-        XCTAssert( (resPlayer == 6) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 6) , String(format:"%s",#function))
         
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(11)
-        XCTAssert( (resPlayer == 11) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 11) , String(format:"%s",#function))
         
         let resultDefense = TOSCalculator.sharedInstance.calculateDefense()
-        XCTAssert( (resultDefense == 39) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resultDefense == 39) , String(format:"%s",#function))
         
         let resultAttack = TOSCalculator.sharedInstance.calculateAttack()
-        XCTAssert( (resultAttack == 64) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resultAttack == 64) , String(format:"%s",#function))
 
         
     }
@@ -138,59 +138,59 @@ class TOSCalculatorTests: XCTestCase {
 
         
         var resPlayer = TOSCalculator.sharedInstance.calculatePlayer(2)
-        XCTAssert( (resPlayer == 5) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 5) , String(format:"%s",#function))
         
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(3)
-        XCTAssert( (resPlayer == 18) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 18) , String(format:"%s",#function))
 
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(4)
-        XCTAssert( (resPlayer == 1) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 1) , String(format:"%s",#function))
 
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(5)
-        XCTAssert( (resPlayer == 6) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 6) , String(format:"%s",#function))
 
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(6)
-        XCTAssert( (resPlayer == 10) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 10) , String(format:"%s",#function))
         
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(8)
-        XCTAssert( (resPlayer == 5) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 5) , String(format:"%s",#function))
 
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(9)
-        XCTAssert( (resPlayer == 7) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 7) , String(format:"%s",#function))
 
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(10)
-        XCTAssert( (resPlayer == 10) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 10) , String(format:"%s",#function))
 
         resPlayer = TOSCalculator.sharedInstance.calculatePlayer(11)
-        XCTAssert( (resPlayer == 16) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resPlayer == 16) , String(format:"%s",#function))
         
      //
         let resultDefense = TOSCalculator.sharedInstance.calculateDefense()
-        XCTAssert( (resultDefense == 35) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resultDefense == 35) , String(format:"%s",#function))
         
         let resultAttack = TOSCalculator.sharedInstance.calculateAttack()
-        XCTAssert( (resultAttack == 39) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (resultAttack == 39) , String(format:"%s",#function))
         
         
         let counterValue = TOSCalculator.sharedInstance.calculateCounter()
-        XCTAssert( (counterValue == -15) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (counterValue == -15) , String(format:"%s",#function))
     }
-    
+    /*
     func testGetAllPlayersForPosition(){
         var players = TOSCalculator.sharedInstance.getAllPlayersForPosition(4)
-        XCTAssert( (players.count == 19) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (players.count == 19) , String(format:"%s",#function))
         
         players = TOSCalculator.sharedInstance.getAllPlayersForPosition(5)
-        XCTAssert( (players.count == 10) , String(format:"%s",__FUNCTION__))
+        XCTAssert( (players.count == 10) , String(format:"%s",#function))
 
         
         players = TOSCalculator.sharedInstance.getAllPlayersForPosition(9)
-        XCTAssert( (players.count == 16) , String(format:"%s",__FUNCTION__))
-    }
+        XCTAssert( (players.count == 16) , String(format:"%s",#function))
+    }*/
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measure() {
             // Put the code you want to measure the time of here.
         }
     }

@@ -46,7 +46,7 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate,A
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //fullviewad = ADInterstitialAd()
         //fullviewad.delegate = self
@@ -61,51 +61,51 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate,A
         
         team = (TOSCalculator.sharedInstance.team) as NSDictionary
         for index in 1...11{
-            let player = team.objectForKey(index) as! NSDictionary
+            let player = team.object(forKey: index) as! NSDictionary
             
-            let image = player.objectForKey("image")
+            let image = player.object(forKey: "image")
             if (image != nil){
                 let buttonIndex = index - 1
-                (playersButtons[buttonIndex] as! UIButton).setBackgroundImage(UIImage(named: image as! String), forState: UIControlState.Normal)
+                (playersButtons[buttonIndex] as! UIButton).setBackgroundImage(UIImage(named: image as! String), for: UIControlState())
             }else{
                 let buttonIndex = index - 1
-                (playersButtons[buttonIndex] as! UIButton).setBackgroundImage(nil, forState: UIControlState.Normal)
+                (playersButtons[buttonIndex] as! UIButton).setBackgroundImage(nil, for: UIControlState())
             }
         }
         if (TOSCalculator.sharedInstance.coach1.count > 0){
             let coach = TOSCalculator.sharedInstance.coach1
-            let image = coach.objectForKey("image")
+            let image = coach.object(forKey: "image")
             if (image != nil){
-                coach1Button.setBackgroundImage(UIImage(named: image as! String), forState: UIControlState.Normal)
+                coach1Button.setBackgroundImage(UIImage(named: image as! String), for: UIControlState())
             }else{
-                coach1Button.setBackgroundImage(UIImage(named: "ent_1.png"), forState: UIControlState.Normal)
+                coach1Button.setBackgroundImage(UIImage(named: "ent_1.png"), for: UIControlState())
             }
         }else {
-            coach1Button.setBackgroundImage(UIImage(named: "ent_1.png"), forState: UIControlState.Normal)
+            coach1Button.setBackgroundImage(UIImage(named: "ent_1.png"), for: UIControlState())
         }
         
         if (TOSCalculator.sharedInstance.coach2.count > 0){
             let coach = TOSCalculator.sharedInstance.coach2
-            let image = coach.objectForKey("image")
+            let image = coach.object(forKey: "image")
             if (image != nil){
-                coach2Button.setBackgroundImage(UIImage(named: image as! String), forState: UIControlState.Normal)
+                coach2Button.setBackgroundImage(UIImage(named: image as! String), for: UIControlState())
             }else{
-                coach2Button.setBackgroundImage(UIImage(named: "ent_0.png"), forState: UIControlState.Normal)
+                coach2Button.setBackgroundImage(UIImage(named: "ent_0.png"), for: UIControlState())
             }
         }else {
-            coach2Button.setBackgroundImage(UIImage(named: "ent_0.png"), forState: UIControlState.Normal)
+            coach2Button.setBackgroundImage(UIImage(named: "ent_0.png"), for: UIControlState())
         }
         
         if (TOSCalculator.sharedInstance.coach3.count > 0){
             let coach = TOSCalculator.sharedInstance.coach3
-            let image = coach.objectForKey("image")
+            let image = coach.object(forKey: "image")
             if (image != nil){
-                coach3Button.setBackgroundImage(UIImage(named: image as! String), forState: UIControlState.Normal)
+                coach3Button.setBackgroundImage(UIImage(named: image as! String), for: UIControlState())
             }else{
-                coach3Button.setBackgroundImage(UIImage(named: "ent_0.png"), forState: UIControlState.Normal)
+                coach3Button.setBackgroundImage(UIImage(named: "ent_0.png"), for: UIControlState())
             }
         }else {
-            coach3Button.setBackgroundImage(UIImage(named: "ent_0.png"), forState: UIControlState.Normal)
+            coach3Button.setBackgroundImage(UIImage(named: "ent_0.png"), for: UIControlState())
         }
         
         
@@ -122,90 +122,90 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate,A
         
     }
 
-    @IBAction func p1Action(sender: AnyObject) {
+    @IBAction func p1Action(_ sender: AnyObject) {
         playerAction(sender, position: 1)
     }
-    @IBAction func p2Action(sender: AnyObject) {
+    @IBAction func p2Action(_ sender: AnyObject) {
         playerAction(sender, position: 2)
     }
-    @IBAction func p3Action(sender: AnyObject) {
+    @IBAction func p3Action(_ sender: AnyObject) {
         playerAction(sender, position: 3)
     }
-    @IBAction func p4Action(sender: AnyObject) {
+    @IBAction func p4Action(_ sender: AnyObject) {
         playerAction(sender, position: 4)
     }
-    @IBAction func p5Action(sender: AnyObject) {
+    @IBAction func p5Action(_ sender: AnyObject) {
         playerAction(sender, position: 5)
     }
-    @IBAction func p6Action(sender: AnyObject) {
+    @IBAction func p6Action(_ sender: AnyObject) {
         playerAction(sender, position: 6)
     }
-    @IBAction func p7Action(sender: AnyObject) {
+    @IBAction func p7Action(_ sender: AnyObject) {
         playerAction(sender, position: 7)
     }
-    @IBAction func p8Action(sender: AnyObject) {
+    @IBAction func p8Action(_ sender: AnyObject) {
         playerAction(sender, position: 8)
     }
-    @IBAction func p9Action(sender: AnyObject) {
+    @IBAction func p9Action(_ sender: AnyObject) {
         playerAction(sender, position: 9)
     }
-    @IBAction func p10Action(sender: AnyObject) {
+    @IBAction func p10Action(_ sender: AnyObject) {
         playerAction(sender, position: 10)
     }
-    @IBAction func p11Action(sender: AnyObject) {
+    @IBAction func p11Action(_ sender: AnyObject) {
         playerAction(sender, position: 11)
     }
     
-    @IBAction func coach1Action(sender: AnyObject) {
+    @IBAction func coach1Action(_ sender: AnyObject) {
         coachAction(sender, position: 1)
     }
-    @IBAction func coach2Action(sender: AnyObject) {
+    @IBAction func coach2Action(_ sender: AnyObject) {
         coachAction(sender, position: 2)
     }
-    @IBAction func coach3Action(sender: AnyObject) {
+    @IBAction func coach3Action(_ sender: AnyObject) {
         coachAction(sender, position: 3)
     }
     
-    func coachAction (sender: AnyObject, position: Int){
-        popoverAction(sender, position: position, role: TeamRole.Coach)
+    func coachAction (_ sender: AnyObject, position: Int){
+        popoverAction(sender, position: position, role: TeamRole.coach)
     }
     
-    func playerAction (sender: AnyObject, position: Int){
-        popoverAction(sender, position: position, role: TeamRole.Player)
+    func playerAction (_ sender: AnyObject, position: Int){
+        popoverAction(sender, position: position, role: TeamRole.player)
     }
     
-    func popoverAction (sender: AnyObject, position: Int, role: TeamRole){
+    func popoverAction (_ sender: AnyObject, position: Int, role: TeamRole){
         let playerInformationViewController =  PlayerPickerViewController()
         playerInformationViewController.position = position
         playerInformationViewController.role = role
-        playerInformationViewController.modalPresentationStyle = .Popover
-        playerInformationViewController.preferredContentSize = CGSizeMake(300, 300)
+        playerInformationViewController.modalPresentationStyle = .popover
+        playerInformationViewController.preferredContentSize = CGSize(width: 300, height: 300)
         playerInformationViewController.caller = self
         
         let popoverPresentationViewController =  playerInformationViewController.popoverPresentationController
-        popoverPresentationViewController?.permittedArrowDirections = .Any
+        popoverPresentationViewController?.permittedArrowDirections = .any
         popoverPresentationViewController?.delegate = self
-        popoverPresentationViewController?.sourceRect = CGRectMake(50, 50, 0, 0)
+        popoverPresentationViewController?.sourceRect = CGRect(x: 50, y: 50, width: 0, height: 0)
         //popoverPresentationController?.barButtonItem = sender
         popoverPresentationViewController?.sourceView = sender as? UIView
-        presentViewController(playerInformationViewController, animated: true, completion: nil)
+        present(playerInformationViewController, animated: true, completion: nil)
     }
-    func bannerViewDidLoadAd(banner: ADBannerView!) {
-        adBanner.hidden = false
-    }
-    
-    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
-        adBanner.hidden = true
+    func bannerViewDidLoadAd(_ banner: ADBannerView!) {
+        adBanner.isHidden = false
     }
     
-    func interstitialAdActionShouldBegin(interstitialAd: ADInterstitialAd!, willLeaveApplication willLeave: Bool) -> Bool {
+    func bannerView(_ banner: ADBannerView!, didFailToReceiveAdWithError error: Error!) {
+        adBanner.isHidden = true
+    }
+    
+    func interstitialAdActionShouldBegin(_ interstitialAd: ADInterstitialAd!, willLeaveApplication willLeave: Bool) -> Bool {
         return true;
     }
     
-    func interstitialAdDidUnload(interstitialAd: ADInterstitialAd!) {
+    func interstitialAdDidUnload(_ interstitialAd: ADInterstitialAd!) {
     
     }
-    func interstitialAd(interstitialAd: ADInterstitialAd!, didFailWithError error: NSError!){
+    func interstitialAd(_ interstitialAd: ADInterstitialAd!, didFailWithError error: Error!){
         
     }
 

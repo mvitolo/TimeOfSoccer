@@ -9,7 +9,7 @@
 import UIKit
 
 enum TeamRole {
-    case Coach, Player
+    case coach, player
 }
 
 class PlayerPickerViewController: UITableViewController {
@@ -20,12 +20,12 @@ class PlayerPickerViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if ( role == TeamRole.Player ){
-            self.items.addObjectsFromArray(TOSCalculator.sharedInstance.getAllPlayersForPosition(self.position) as [AnyObject])
+        if ( role == TeamRole.player ){
+            self.items.addObjects(from: TOSCalculator.sharedInstance.getAllPlayersForPosition(self.position) as [AnyObject])
             self.title = String(format: "Player in position %d", position)
 
-        } else if ( role == TeamRole.Coach ) {
-            self.items.addObjectsFromArray(TOSCalculator.sharedInstance.coaches as [AnyObject])
+        } else if ( role == TeamRole.coach ) {
+            self.items.addObjects(from: TOSCalculator.sharedInstance.coaches as [AnyObject])
             
             self.title = String(format: "Coach in position %d", position)
         }
@@ -38,58 +38,58 @@ class PlayerPickerViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (self.items.count + 1)
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()//tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
         if ( indexPath.row == 0 ){
             cell.textLabel?.text = "Remove"
-            cell.textLabel?.textAlignment = NSTextAlignment.Center
+            cell.textLabel?.textAlignment = NSTextAlignment.center
             return cell
         }
         
         let player = self.items[indexPath.row - 1] as! NSDictionary
-        if ( role == TeamRole.Player){
-            cell.textLabel?.text = NSString(format: "%@ - %@", (player.objectForKey("ShirtNumber")?.stringValue)!, player.objectForKey("Name") as! NSString) as String
-        }else if (role == TeamRole.Coach){
-            cell.textLabel?.text =  player.objectForKey("Name") as? String
+        if ( role == TeamRole.player){
+            cell.textLabel?.text = NSString(format: "%@ - %@", ((player.object(forKey: "ShirtNumber") as AnyObject).stringValue)!, player.object(forKey: "Name") as! NSString) as String
+        }else if (role == TeamRole.coach){
+            cell.textLabel?.text =  player.object(forKey: "Name") as? String
         }
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        if ( role == TeamRole.Player ){
+        if ( role == TeamRole.player ){
             if (indexPath.row == 0){
                 TOSCalculator.sharedInstance.removePlayerFromPosition(position)
             }else{
                 let player = self.items[indexPath.row - 1] as! NSDictionary
             
-                TOSCalculator.sharedInstance.addPlayerToTeam(player.objectForKey("ShirtNumber") as! NSNumber, playerName: player.objectForKey("Name") as! NSString as String, position: position)
+                TOSCalculator.sharedInstance.addPlayerToTeam(player.object(forKey: "ShirtNumber") as! NSNumber, playerName: player.object(forKey: "Name") as! NSString as String, position: position)
             }
-        }else if ( role == TeamRole.Coach ){
+        }else if ( role == TeamRole.coach ){
             if (indexPath.row == 0){
                 TOSCalculator.sharedInstance.removeCoachFromPosition(position)
             }else{
                 let coach = self.items[indexPath.row - 1] as! NSDictionary
             
-                TOSCalculator.sharedInstance.addCoachToPosition(coach.objectForKey("Name") as! String, position: position)
+                TOSCalculator.sharedInstance.addCoachToPosition(coach.object(forKey: "Name") as! String, position: position)
             }
         }
         caller!.reassignTiles()
 
-        if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-            self.dismissViewControllerAnimated(true, completion:nil)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            self.dismiss(animated: true, completion:nil)
         } else {
-            self.navigationController?.popViewControllerAnimated(true)
+            self.navigationController?.popViewController(animated: true)
         }
     }
 }

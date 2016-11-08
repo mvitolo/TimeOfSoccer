@@ -26,12 +26,12 @@ class ViewController_iphone: UITableViewController, UIPopoverPresentationControl
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 2
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if section == 0 {
             return 3
@@ -42,48 +42,48 @@ class ViewController_iphone: UITableViewController, UIPopoverPresentationControl
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("iphMainCell", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "iphMainCell", for: indexPath)
         if indexPath.section == 0 {
             let coach = TOSCalculator.sharedInstance.getCoachFromPosition(indexPath.row + 1)
             if coach.count == 0 {
                 cell.textLabel?.text = String(format: "%d -", indexPath.row + 1)
 
             }else{
-                let name = coach.objectForKey("Name") as! NSString
+                let name = coach.object(forKey: "Name") as! NSString
                 cell.textLabel?.text = String(format: "%d - %@", indexPath.row + 1, name)
             }
         }
         
         if indexPath.section == 1{
             let team = (TOSCalculator.sharedInstance.team) as NSDictionary
-            let player = team.objectForKey(indexPath.row + 1) as! NSDictionary
+            let player = team.object(forKey: indexPath.row + 1) as! NSDictionary
             if player.count == 0 {
                 cell.textLabel?.text = String(format: "%d -", indexPath.row + 1)
             }else{
 
-                let shirtNumber = player.objectForKey("ShirtNumber") as! NSNumber
-                let name = player.objectForKey("Name") as! NSString
-                cell.textLabel?.text = String(format: "%d - %d %@", indexPath.row + 1, shirtNumber.intValue , name)
+                let shirtNumber = player.object(forKey: "ShirtNumber") as! NSNumber
+                let name = player.object(forKey: "Name") as! NSString
+                cell.textLabel?.text = String(format: "%d - %d %@", indexPath.row + 1, shirtNumber.int32Value , name)
             }
-            cell.textLabel?.backgroundColor =  TOSCalculator.sharedInstance.isPlayerAttackModule(indexPath.row + 1) ? UIColor.blueColor().colorWithAlphaComponent(0.4) : UIColor.greenColor().colorWithAlphaComponent(0.4)
+            cell.textLabel?.backgroundColor =  TOSCalculator.sharedInstance.isPlayerAttackModule(indexPath.row + 1) ? UIColor.blue.withAlphaComponent(0.4) : UIColor.green.withAlphaComponent(0.4)
             
         }
 
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var role : TeamRole!
         if indexPath.section == 0 {
-            role = TeamRole.Coach
+            role = TeamRole.coach
         } else if indexPath.section == 1 {
-            role = TeamRole.Player
+            role = TeamRole.player
         }
         popoverAction(self, position: indexPath.row + 1, role: role)
     }
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if ( section == 0){
             return "Coaches"
         } else if ( section == 1){
@@ -101,12 +101,12 @@ class ViewController_iphone: UITableViewController, UIPopoverPresentationControl
         self.attackLabel.text = String(format: "%d", attack)
         self.counterLabel.text = String(format: "%d", counter)
     }
-    func popoverAction (sender: AnyObject, position: Int, role: TeamRole){
+    func popoverAction (_ sender: AnyObject, position: Int, role: TeamRole){
         let playerInformationViewController =  PlayerPickerViewController()
         playerInformationViewController.position = position
         playerInformationViewController.role = role
-        playerInformationViewController.modalPresentationStyle = .Popover
-        playerInformationViewController.preferredContentSize = CGSizeMake(300, 300)
+        playerInformationViewController.modalPresentationStyle = .popover
+        playerInformationViewController.preferredContentSize = CGSize(width: 300, height: 300)
         playerInformationViewController.caller = self
         self.navigationController?.pushViewController(playerInformationViewController, animated: true)
     }

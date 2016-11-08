@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class TOSCalculator {
+open class TOSCalculator {
 
     internal var team = NSMutableDictionary()
     internal var coach1 = NSDictionary()
@@ -27,12 +27,12 @@ public class TOSCalculator {
     init() {
         
         var jsonDict = getJsonData("players")
-        var jsonContainer = jsonDict.objectForKey("Players") as! NSDictionary
-        players = jsonContainer.objectForKey("Player") as! NSArray
+        var jsonContainer = jsonDict.object(forKey: "Players") as! NSDictionary
+        players = jsonContainer.object(forKey: "Player") as! NSArray
         
         jsonDict = getJsonData("coaches")
-        jsonContainer = jsonDict.objectForKey("Coaches") as! NSDictionary
-        coaches = jsonContainer.objectForKey("Coach") as! NSArray
+        jsonContainer = jsonDict.object(forKey: "Coaches") as! NSDictionary
+        coaches = jsonContainer.object(forKey: "Coach") as! NSArray
         resetTeam()
     }
     
@@ -46,47 +46,47 @@ public class TOSCalculator {
         coach3 = NSDictionary()
     }
     
-    private func getJsonData(FileName:String) ->NSDictionary{
+    fileprivate func getJsonData(_ FileName:String) ->NSDictionary{
         var _: NSError?
-        let path = NSBundle.mainBundle().pathForResource(FileName, ofType: "json")
-        let _ = NSURL(string: path!)
-        let data: NSData? = NSData(contentsOfFile: path!)
-        let jsonDict = try! NSJSONSerialization.JSONObjectWithData(data!, options: []) as! NSDictionary
+        let path = Bundle.main.path(forResource: FileName, ofType: "json")
+        let _ = URL(string: path!)
+        let data: Data? = try? Data(contentsOf: URL(fileURLWithPath: path!))
+        let jsonDict = try! JSONSerialization.jsonObject(with: data!, options: []) as! NSDictionary
         return jsonDict
     }
     
-    func getAllPlayersForPosition(position:Int)-> NSArray{
+    func getAllPlayersForPosition(_ position:Int)-> NSArray{
         let playersinrole = NSMutableArray()
         for player in players{
-            let playerPositions = (player.objectForKey("Positions") as! NSArray)
+            let playerPositions = ((player as AnyObject).object(forKey: "Positions") as! NSArray)
             
             for playerPosition in playerPositions {
-                if ((playerPosition.objectForKey("Position") as! Int) == position){
-                    playersinrole.addObject(player)
+                if (((playerPosition as AnyObject).object(forKey: "Position") as! Int) == position){
+                    playersinrole.add(player)
                 }
             }
         }
         
         let descriptor: NSSortDescriptor = NSSortDescriptor(key: "ShirtNumber", ascending: true)
-        let sortedResults: NSArray = playersinrole.sortedArrayUsingDescriptors([descriptor])
+        let sortedResults = playersinrole.sortedArray(using: [descriptor])
 
         
-        return sortedResults
+        return sortedResults as NSArray
     }
     
-    func addCoachToPosition(CoachName:String, position:Int) -> Bool{
+    func addCoachToPosition(_ CoachName:String, position:Int) -> Bool{
         for coach in coaches {
-            let coachname = (coach as! NSDictionary).objectForKey("Name") as! NSString
-            if coachname.isEqualToString(CoachName) {
-                if (coach1.count != 0 && (coach1.objectForKey("Name") as! NSString).isEqualToString(CoachName)){
+            let coachname = (coach as! NSDictionary).object(forKey: "Name") as! NSString
+            if coachname.isEqual(to: CoachName) {
+                if (coach1.count != 0 && (coach1.object(forKey: "Name") as! NSString).isEqual(to: CoachName)){
                     coach1 = NSDictionary()
                 }
                 
-                if (coach2.count != 0 && (coach2.objectForKey("Name") as! NSString).isEqualToString(CoachName)){
+                if (coach2.count != 0 && (coach2.object(forKey: "Name") as! NSString).isEqual(to: CoachName)){
                     coach2 = NSDictionary()
                 }
                 
-                if (coach3.count != 0 && (coach3.objectForKey("Name") as! NSString).isEqualToString(CoachName)){
+                if (coach3.count != 0 && (coach3.object(forKey: "Name") as! NSString).isEqual(to: CoachName)){
                     coach3 = NSDictionary()
                 }
                 
@@ -105,11 +105,11 @@ public class TOSCalculator {
         return false
     }
     
-    func removePlayerFromPosition(positionIndex: Int) {
+    func removePlayerFromPosition(_ positionIndex: Int) {
         team[positionIndex] = NSDictionary()
     }
     
-    func removeCoachFromPosition(positionIndex: Int) {
+    func removeCoachFromPosition(_ positionIndex: Int) {
         if (positionIndex == 1){
             coach1 = NSDictionary()
         }else if (positionIndex == 2){
@@ -119,28 +119,28 @@ public class TOSCalculator {
         }
     }
     
-    func addPlayerToTeam(shirtnumber: NSNumber, playerName: String, position:Int) ->Bool {
+    func addPlayerToTeam(_ shirtnumber: NSNumber, playerName: String, position:Int) ->Bool {
         for player in players {
-            let cplayerName = (player as! NSDictionary).objectForKey("Name") as! NSString
-            let cplayerShirtNumber = (player as! NSDictionary).objectForKey("ShirtNumber") as! Int
+            let cplayerName = (player as! NSDictionary).object(forKey: "Name") as! NSString
+            let cplayerShirtNumber = (player as! NSDictionary).object(forKey: "ShirtNumber") as! Int
             
-            if cplayerShirtNumber == shirtnumber {
+            if cplayerShirtNumber == shirtnumber.intValue {
                 
-                if (cplayerName.isEqualToString(playerName) || playerName == "" ){
+                if (cplayerName.isEqual(to: playerName) || playerName == "" ){
                 
-                    let playerPositions = (player.objectForKey("Positions") as! NSArray)
+                    let playerPositions = ((player as AnyObject).object(forKey: "Positions") as! NSArray)
                 
                     for playerPosition in playerPositions {
-                        if ((playerPosition.objectForKey("Position") as! Int) == position){
+                        if (((playerPosition as AnyObject).object(forKey: "Position") as! Int) == position){
                             for index in 1...11 {
                                 let teamPlayer = team[index]
-                                if (teamPlayer == nil || teamPlayer?.count == 0)
+                                if (teamPlayer == nil || (teamPlayer as AnyObject).count == 0)
                                 {
                                     continue
                                 }
-                                let teamName = (teamPlayer as! NSDictionary).objectForKey("Name") as! NSString
-                                let teamShirtNumber = (teamPlayer as! NSDictionary).objectForKey("ShirtNumber") as! Int
-                                if (teamName.isEqualToString(cplayerName as String) && teamShirtNumber == cplayerShirtNumber ) {
+                                let teamName = (teamPlayer as! NSDictionary).object(forKey: "Name") as! NSString
+                                let teamShirtNumber = (teamPlayer as! NSDictionary).object(forKey: "ShirtNumber") as! Int
+                                if (teamName.isEqual(to: cplayerName as String) && teamShirtNumber == cplayerShirtNumber ) {
                                     team[index] = NSDictionary()
                                 }
                             }
@@ -155,7 +155,7 @@ public class TOSCalculator {
         return false
     }
     
-    func getLinkModifierForPosition(positionIndex: Int) ->Int{
+    func getLinkModifierForPosition(_ positionIndex: Int) ->Int{
         
         var color = NSString()
         var position = NSString()
@@ -193,17 +193,17 @@ public class TOSCalculator {
             return 0
         }
         var res = 0
-        let player = team.objectForKey(positionIndex) as! NSDictionary
+        let player = team.object(forKey: positionIndex) as! NSDictionary
         if ( player.count == 0 ){
             return res
         }
-        if ((player.objectForKey(position) as! NSString).isEqualToString(color as String)){
+        if ((player.object(forKey: position) as! NSString).isEqual(to: color as String)){
             res = 2
         }
         return res
     }
     
-    func getModifierForPosition(positionIndex: Int) ->NSString{
+    func getModifierForPosition(_ positionIndex: Int) ->NSString{
         switch positionIndex{
         case 1:
             return "OrangeDown"
@@ -256,9 +256,9 @@ public class TOSCalculator {
         }
     }
     
-    func getLeftConnection(positionIndex: Int) -> Int{
+    func getLeftConnection(_ positionIndex: Int) -> Int{
         var res = 0
-        let player = team.objectForKey(positionIndex) as! NSDictionary
+        let player = team.object(forKey: positionIndex) as! NSDictionary
         if ( player.count == 0 || positionIndex == 2 || positionIndex == 6){
             return res
         }
@@ -271,27 +271,27 @@ public class TOSCalculator {
             nextPosition = 6
             modifier = 2
         }
-        var nextplayer = team.objectForKey(nextPosition) as! NSDictionary
+        var nextplayer = team.object(forKey: nextPosition) as! NSDictionary
         if ( nextplayer.count > 0){
-            let connString = player.objectForKey("LeftCon") as! NSString
-            if ( connString.isEqualToString("")){
+            let connString = player.object(forKey: "LeftCon") as! NSString
+            if ( connString.isEqual(to: "")){
                 return 0
             }
-            let otherString = nextplayer.objectForKey("RightCon") as! NSString
-            if (connString.isEqualToString(otherString as String)){
-                if (!connString.isEqualToString("Blue")){
+            let otherString = nextplayer.object(forKey: "RightCon") as! NSString
+            if (connString.isEqual(to: otherString as String)){
+                if (!connString.isEqual(to: "Blue")){
                     modifier = 0
                 }
                 res = 1 + modifier
             }
         }
         if (addExtraConnection) {
-            nextplayer = team.objectForKey(11) as! NSDictionary
+            nextplayer = team.object(forKey: 11) as! NSDictionary
             if ( nextplayer.count > 0){
-                let connString = player.objectForKey("LeftCon") as! NSString
-                let otherString = nextplayer.objectForKey("RightCon") as! NSString
-                if (connString.isEqualToString(otherString as String)){
-                    if ( connString.isEqualToString("Blue") ){
+                let connString = player.object(forKey: "LeftCon") as! NSString
+                let otherString = nextplayer.object(forKey: "RightCon") as! NSString
+                if (connString.isEqual(to: otherString as String)){
+                    if ( connString.isEqual(to: "Blue") ){
                         res += 3
                     }else{
                         res += 1
@@ -302,10 +302,10 @@ public class TOSCalculator {
         return res
     }
     
-    func getRightConnection(positionIndex: Int) -> Int{
+    func getRightConnection(_ positionIndex: Int) -> Int{
         
         var res = 0
-        let player = team.objectForKey(positionIndex) as! NSDictionary
+        let player = team.object(forKey: positionIndex) as! NSDictionary
         if ( player.count == 0 || positionIndex == 5 || positionIndex == 9){
             return res
         }
@@ -318,15 +318,15 @@ public class TOSCalculator {
             nextPosition = 9
             modifier = 2
         }
-        var nextplayer = team.objectForKey(nextPosition) as! NSDictionary
+        var nextplayer = team.object(forKey: nextPosition) as! NSDictionary
         if ( nextplayer.count > 0){
-            let connString = player.objectForKey("RightCon") as! NSString
-            if ( connString.isEqualToString("")){
+            let connString = player.object(forKey: "RightCon") as! NSString
+            if ( connString.isEqual(to: "")){
                 return 0
             }
-            let otherString = nextplayer.objectForKey("LeftCon") as! NSString
-            if (connString.isEqualToString(otherString as String)){
-                if (!connString.isEqualToString("Blue")){
+            let otherString = nextplayer.object(forKey: "LeftCon") as! NSString
+            if (connString.isEqual(to: otherString as String)){
+                if (!connString.isEqual(to: "Blue")){
                     modifier = 0
                 }
 
@@ -334,12 +334,12 @@ public class TOSCalculator {
             }
         }
         if (addExtraConnection) {
-            nextplayer = team.objectForKey(10) as! NSDictionary
+            nextplayer = team.object(forKey: 10) as! NSDictionary
             if ( nextplayer.count > 0){
-                let connString = player.objectForKey("RightCon") as! NSString
-                let otherString = nextplayer.objectForKey("LeftCon") as! NSString
-                if (connString.isEqualToString(otherString as String)){
-                    if ( connString.isEqualToString("Blue") ){
+                let connString = player.object(forKey: "RightCon") as! NSString
+                let otherString = nextplayer.object(forKey: "LeftCon") as! NSString
+                if (connString.isEqual(to: otherString as String)){
+                    if ( connString.isEqual(to: "Blue") ){
                         res += 3
                     }else{
                         res += 1
@@ -350,9 +350,9 @@ public class TOSCalculator {
         return res
     }
     
-    func getDownConnection(positionIndex: Int) -> Int{
+    func getDownConnection(_ positionIndex: Int) -> Int{
         var res = 0
-        let player = team.objectForKey(positionIndex) as! NSDictionary
+        let player = team.object(forKey: positionIndex) as! NSDictionary
         if ( player.count == 0 || positionIndex < 6){
             return res
         }
@@ -365,20 +365,20 @@ public class TOSCalculator {
             nextPosition = positionIndex - 3
         }
         
-        let connString = player.objectForKey("DownCon") as! NSString
-        if ( connString.isEqualToString("")){
+        let connString = player.object(forKey: "DownCon") as! NSString
+        if ( connString.isEqual(to: "")){
             return 0
         }
         
         if ( positionIndex == 7 || positionIndex == 8 ){
             modifier = 0
         }
-        let nextplayer = team.objectForKey(nextPosition) as! NSDictionary
+        let nextplayer = team.object(forKey: nextPosition) as! NSDictionary
         if ( nextplayer.count > 0){
             
-            let otherString = nextplayer.objectForKey("TopCon") as! NSString
-            if (connString.isEqualToString(otherString as String)){
-                if (!connString.isEqualToString("Yellow")){
+            let otherString = nextplayer.object(forKey: "TopCon") as! NSString
+            if (connString.isEqual(to: otherString as String)){
+                if (!connString.isEqual(to: "Yellow")){
                     modifier = 0
                 }
                 res = 1 + modifier
@@ -388,9 +388,9 @@ public class TOSCalculator {
     }
     
     
-    func getTopConnection(positionIndex: Int) -> Int{
+    func getTopConnection(_ positionIndex: Int) -> Int{
         var res = 0
-        let player = team.objectForKey(positionIndex) as! NSDictionary
+        let player = team.object(forKey: positionIndex) as! NSDictionary
         if ( player.count == 0 || positionIndex > 9 || positionIndex == 6 || positionIndex == 9){
             return res
         }
@@ -403,8 +403,8 @@ public class TOSCalculator {
             nextPosition = positionIndex + 3
         }
         
-        let connString = player.objectForKey("TopCon") as! NSString
-        if ( connString.isEqualToString("")){
+        let connString = player.object(forKey: "TopCon") as! NSString
+        if ( connString.isEqual(to: "")){
             return 0
         }
         
@@ -412,12 +412,12 @@ public class TOSCalculator {
             modifier = 0
         }
         
-        let nextplayer = team.objectForKey(nextPosition) as! NSDictionary
+        let nextplayer = team.object(forKey: nextPosition) as! NSDictionary
         if ( nextplayer.count > 0){
             
-            let otherString = nextplayer.objectForKey("DownCon") as! NSString
-            if (connString.isEqualToString(otherString as String)){
-                if (!connString.isEqualToString("Yellow")){
+            let otherString = nextplayer.object(forKey: "DownCon") as! NSString
+            if (connString.isEqual(to: otherString as String)){
+                if (!connString.isEqual(to: "Yellow")){
                     modifier = 0
                 }
                 res = 1 + modifier
@@ -426,7 +426,7 @@ public class TOSCalculator {
         return res
     }
     
-    func getConnectionMultiplier(positionIndex: Int) ->Int{
+    func getConnectionMultiplier(_ positionIndex: Int) ->Int{
         if (positionIndex == 1){
             return 0
         }
@@ -439,7 +439,7 @@ public class TOSCalculator {
         return res
     }
     
-    func getCoachModifier(coachPosition: Int, playerPosition: Int) -> Int{
+    func getCoachModifier(_ coachPosition: Int, playerPosition: Int) -> Int{
         
         var coach = NSDictionary()
         
@@ -451,36 +451,36 @@ public class TOSCalculator {
             coach = coach3
         }
         
-        let teamplayer = team.objectForKey(playerPosition) as! NSDictionary
+        let teamplayer = team.object(forKey: playerPosition) as! NSDictionary
         if(teamplayer.count == 0 || coach.count == 0) {
             return 0
         }
         
         var res = 0
         
-        let tCon = teamplayer.objectForKey("TopCon") as! NSString
-        let lCon = teamplayer.objectForKey("LeftCon") as! NSString
-        let rCon = teamplayer.objectForKey("RightCon") as! NSString
-        let dCon = teamplayer.objectForKey("DownCon") as! NSString
+        let tCon = teamplayer.object(forKey: "TopCon") as! NSString
+        let lCon = teamplayer.object(forKey: "LeftCon") as! NSString
+        let rCon = teamplayer.object(forKey: "RightCon") as! NSString
+        let dCon = teamplayer.object(forKey: "DownCon") as! NSString
         let con = [tCon,lCon,rCon,dCon]
         
         for connection in con {
-            if (!(connection.isEqualToString(""))){
-                res += coach.objectForKey(connection) as! Int
+            if (!(connection.isEqual(to: ""))){
+                res += coach.object(forKey: connection) as! Int
             }
         }
         
         return res
     }
     
-    func calculatePlayer(playerPosition: Int) ->Int{
+    func calculatePlayer(_ playerPosition: Int) ->Int{
         var result = 0
-        let teamplayer = team.objectForKey(playerPosition) as! NSDictionary
+        let teamplayer = team.object(forKey: playerPosition) as! NSDictionary
         
         if(teamplayer.count == 0) {
             return -2
         }
-        let res = teamplayer.objectForKey(getModifierForPosition(playerPosition)) as! Int
+        let res = teamplayer.object(forKey: getModifierForPosition(playerPosition)) as! Int
         result += res
         
         let conn = getConnectionMultiplier(playerPosition)
@@ -506,32 +506,32 @@ public class TOSCalculator {
         for index in 1...11{
             let player = team[index] as! NSDictionary
             if (player.count > 0 ){
-                counter += player.objectForKey("HumanCost") as! Int
+                counter += player.object(forKey: "HumanCost") as! Int
             }
         }
         if (coach1.count > 0){
-            counter += coach1.objectForKey("HumanCost") as! Int
+            counter += coach1.object(forKey: "HumanCost") as! Int
         }
         if (coach2.count > 0){
-            counter += coach2.objectForKey("HumanCost") as! Int
+            counter += coach2.object(forKey: "HumanCost") as! Int
         }
         if (coach3.count > 0){
-            counter += coach3.objectForKey("HumanCost") as! Int
+            counter += coach3.object(forKey: "HumanCost") as! Int
         }
         
         return counter
     }
     
-    func calculateModule(module: NSString) ->Int{
+    func calculateModule(_ module: NSString) ->Int{
         var result = 0
         if (coach1.count == 0){
             addCoachToPosition("-", position: 1)
         }
         
-        let attackModule = coach1.objectForKey(module) as! NSArray
+        let attackModule = coach1.object(forKey: module) as! NSArray
         
         for player in  attackModule {
-            let playernumber = player.objectForKey("Player") as! Int
+            let playernumber = (player as AnyObject).object(forKey: "Player") as! Int
             result += calculatePlayer(playernumber)
         }
         
@@ -546,7 +546,7 @@ public class TOSCalculator {
         return calculateModule("DefenseModule")
     }
     
-    func getCoachFromPosition(position: Int) -> NSDictionary{
+    func getCoachFromPosition(_ position: Int) -> NSDictionary{
         if position == 1 {
             return coach1
         } else if position == 2 {
@@ -557,12 +557,12 @@ public class TOSCalculator {
         return NSDictionary()
     }
     
-    func isPlayerAttackModule(playerPosition:Int) ->Bool {
+    func isPlayerAttackModule(_ playerPosition:Int) ->Bool {
      
-        let attackModule = coach1.objectForKey("AttackModule") as! NSArray
+        let attackModule = coach1.object(forKey: "AttackModule") as! NSArray
         
         for player in  attackModule {
-            let playernumber = player.objectForKey("Player") as! Int
+            let playernumber = (player as AnyObject).object(forKey: "Player") as! Int
             if (playernumber == playerPosition){
                 return true
             }

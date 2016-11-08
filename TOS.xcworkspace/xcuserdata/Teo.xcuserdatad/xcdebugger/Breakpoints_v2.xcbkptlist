@@ -14,9 +14,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "207"
-            endingLineNumber = "207"
-            landmarkName = "testManualExample()"
-            landmarkType = "5">
+            endingLineNumber = "207">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -33,6 +31,118 @@
             endingLineNumber = "116"
             landmarkName = "reassignTiles()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TOSTests/TOSCalculatorTests.swift"
+            timestampString = "500332003.365124"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "testAddMultipositionPlayerToTheRightPosition()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TOS/TosCalculator.swift"
+            timestampString = "500331995.909113"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "addPlayerToTeam(_:playerName:position:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TOS.TOSCalculator.addPlayerToTeam (__ObjC.NSNumber, playerName : Swift.String, position : Swift.Int) -&gt; Swift.Bool"
+                  moduleName = "TOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teo/myCode/GitHub/TOS/TimeOfSoccer/TOS/TosCalculator.swift"
+                  timestampString = "500332382.526359"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TOSTests.TOSCalculator.addPlayerToTeam (__ObjC.NSNumber, playerName : Swift.String, position : Swift.Int) -&gt; Swift.Bool"
+                  moduleName = "TOSTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teo/myCode/GitHub/TOS/TimeOfSoccer/TOS/TosCalculator.swift"
+                  timestampString = "500332383.573343"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "35">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TOS/TosCalculator.swift"
+            timestampString = "500332348.279406"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "addPlayerToTeam(_:playerName:position:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TOS.TOSCalculator.addPlayerToTeam (__ObjC.NSNumber, playerName : Swift.String, position : Swift.Int) -&gt; Swift.Bool"
+                  moduleName = "TOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teo/myCode/GitHub/TOS/TimeOfSoccer/TOS/TosCalculator.swift"
+                  timestampString = "500332382.530799"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "3695">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TOSTests.TOSCalculator.addPlayerToTeam (__ObjC.NSNumber, playerName : Swift.String, position : Swift.Int) -&gt; Swift.Bool"
+                  moduleName = "TOSTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teo/myCode/GitHub/TOS/TimeOfSoccer/TOS/TosCalculator.swift"
+                  timestampString = "500332383.576088"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "3695">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
