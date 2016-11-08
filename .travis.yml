@@ -1,7 +1,13 @@
-nguage: objective-c
-before_install:
-    - pod install
-script:
-  - xctool test -workspace TOS.xcworkspace -scheme TOSTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
-after_success:
-  - cd $TRAVIS_BUILD_DIR && slather
+language: objective-c
+xcode_project: TOS.xcworkspace # # path to project folder, replace {project_name} with the name of your project, If you are using a workspace instead of a project, use the xcode_workspace in place of xcode_project. Ex: xcode_workspace: {project_name}.workspace
+xcode_scheme: TOS # Replace {shared_scheme_name} with a shared scheme in the project. Very important to create a shared scheme!
+script: xctool -project TOS.xcworkspace -scheme SharedSchemeName build  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+
+xcode_sdk: iphonesimulator10.0 # Optional - specify SDK
+
+osx_image: xcode8.1 # Optional - specify another version of Xcode and OS X
+  
+#podfile: {path/to/Podfile} # Optional - if the Podfile is in a different directory, you can use the podfile setting to specify the pod location.
+  
+before_install: pod install # Optional - Run to install dependiences this searching in the root directory for a Podfile. If not found it will not run, unless path to pod file is specified with podfile:
+
